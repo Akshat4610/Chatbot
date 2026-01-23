@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat's Assistant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+            /* 🚫 full page scroll band */
+            font-family: Arial, sans-serif;
+            background: black;
+        }
+
+        .app {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: blue;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .chatBox {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .bot-msg,
+        .user-msg {
+            max-width: 80%;
+            padding: 10px 12px;
+            margin: 6px 0;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        .bot-msg {
+            background: white;
+            color: black;
+        }
+
+        .user-msg {
+            background: #06cde8;
+            color: black;
+            margin-left: auto;
+        }
+
+        .chat_input {
+            display: flex;
+            gap: 8px;
+            padding: 10px;
+            background: white;
+            flex-shrink: 0;
+        }
+
+        .chat_input input {
+            flex: 1;
+            padding: 12px;
+            border-radius: 25px;
+            border: 2px solid aqua;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .chat_input button {
+            padding: 12px 18px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="header">Akshat's Assistant 🤖</div>
+
+        <div class="chatBox" id="chatBox">
+            <div class="bot-msg">Hello Buddy! 👋</div>
+        </div>
+
+        <div class="chat_input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            let input = document.getElementById("userInput");
+            let msg = input.value.trim();
+            if (msg === "") return;
+
+            let chatBox = document.getElementById("chatBox");
+
+            chatBox.innerHTML += `<div class="user-msg">${msg}</div>`;
+            input.value = "";
+
+            let reply = "Sorry, I did not understand...😅";
+
+            let text = msg.toLowerCase();
+
+            if (text.includes("what is your name?") || text.includes("your name") || text.includes("who are you") || text.includes("who are you?") || text.includes("introduce yourself") || text.includes("tell me about yourself") || text.includes("about you") || text.includes("yourself") || text.includes("introduce yourself?") || text.includes("tell me about yourself?") || text.includes("about you?")) {
+                reply = "My self AKTRON🤖 Akshat's personal Assistant";
+            }
+            else if (text.includes("akshat") || text.includes("about akshat") || text.includes("who is akshat") || text.includes("tell me about akshat") || text.includes("akshat?") || text.includes("about akshat?") || text.includes("who is akshat?") || text.includes("tell me about akshat?") || text.includes("info about akshat") || text.includes("info about akshat?") || text.includes("akshat info") || text.includes("akshat info?") || text.includes("details about akshat") || text.includes("details about akshat?") || text.includes("akshat details") || text.includes("akshat details?") || text.includes("who is akshat shah") || text.includes("who is akshat shah?") || text.includes("about akshat shah") || text.includes("about akshat shah?") || text.includes("tell me about akshat shah") || text.includes("tell me about akshat shah?") || text.includes("akshat shah info") || text.includes("akshat shah info?") || text.includes("info about akshat shah") || text.includes("info about akshat shah?") || text.includes("akshat shah details") || text.includes("akshat shah details?") || text.includes("details about akshat shah") || text.includes("details about akshat shah?")) {
+                reply = "Akshat is a Computer Engineering student 💻";
+            }
+            else if (text.includes("college") || text.includes("where do you study") || text.includes("where do you study?") || text.includes("which college do you attend") || text.includes("which college do you attend?") || text.includes("your college") || text.includes("your college?") || text.includes("college info") || text.includes("college info?") || text.includes("info about your college") || text.includes("info about your college?") || text.includes("tell me about your college") || text.includes("tell me about your college?") || text.includes("about your college") || text.includes("about your college?") || text.includes("where is your college located") || text.includes("where is your college located?") || text.includes("which college are you in") || text.includes("which college are you in?") || text.includes("your college details") || text.includes("your college details?") || text.includes("college details") || text.includes("college details?") || text.includes("details about your college") || text.includes("details about your college?") || text.includes("college name") || text.includes("college name?") || text.includes("akshat's college") || text.includes("akshat's college?") || text.includes("where does akshat study") || text.includes("where does akshat study?") || text.includes("akshat college") || text.includes("akshat college?") || text.includes("which college akshat attends") || text.includes("which college akshat attends?") || text.includes("akshat's college info") || text.includes("akshat's college info?") || text.includes("info about akshat's college") || text.includes("info about akshat's college?") || text.includes("tell me about akshat's college") || text.includes("tell me about akshat's college?") || text.includes("about akshat's college") || text.includes("about akshat's college?")) {
+                reply = "Akshat is studying at L.D.R.P - ITR🎓";
+            }
+            else if (text.includes("skills") || text.includes("akshat skills") || text.includes("akshat's skills") || text.includes("what are akshat's skills") || text.includes("what are akshat skills") || text.includes("tell me about akshat's skills") || text.includes("tell me about akshat skills") || text.includes("skills of akshat") || text.includes("skills of akshat?") || text.includes("akshat skillset") || text.includes("akshat skillset?") || text.includes("skillset of akshat") || text.includes("skillset of akshat?") || text.includes("what skills does akshat have") || text.includes("what skills does akshat have?") || text.includes("akshat's skillset") || text.includes("akshat's skillset?") || text.includes("skills akshat has") || text.includes("skills akshat has?") || text.includes("akshat programming skills") || text.includes("akshat programming skills?") || text.includes("programming skills of akshat") || text.includes("programming skills of akshat?") || text.includes("what programming skills does akshat have") || text.includes("what programming skills does akshat have?") || text.includes("tell me about akshat's programming skills") || text.includes("tell me about akshat programming skills")) {
+                reply = "Akshat can Code in C, C++, PYTHON, HTML, CSS, JAVASCRIPT🔥";
+            }
+            else if (text.includes("youtube") || text.includes("akshat youtube") || text.includes("akshat's youtube") || text.includes("akshat youtube channel") || text.includes("akshat's youtube channel") || text.includes("youtube channel of akshat") || text.includes("youtube channel of akshat?") || text.includes("tell me about akshat's youtube channel") || text.includes("tell me about akshat youtube channel") || text.includes("info about akshat's youtube channel") || text.includes("info about akshat youtube channel") || text.includes("details about akshat's youtube channel") || text.includes("details about akshat youtube channel") || text.includes("which is akshat's youtube channel") || text.includes("which is akshat youtube channel") || text.includes("what is akshat's youtube channel") || text.includes("what is akshat youtube channel") || text.includes("akshat's youtube info") || text.includes("akshat's youtube info?") || text.includes("akshat youtube info") || text.includes("akshat youtube info?") || text.includes("youtube info of akshat") || text.includes("youtube info of akshat?") || text.includes("tell me about akshat's youtube") || text.includes("tell me about akshat youtube") || text.includes("info about akshat's youtube") || text.includes("info about akshat youtube") || text.includes("details about akshat's youtube") || text.includes("details about akshat youtube") || text.includes("akshat youtube channel") || text.includes("akshat youtube channel?") || text.includes("akshat's youtube channel") || text.includes("akshat's youtube channel?") || text.includes("which youtube channel does akshat have") || text.includes("which youtube channel does akshat have?") || text.includes("what youtube channel does akshat have") || text.includes("what youtube channel does akshat have?") || text.includes("youtube channel") || text.includes("youtube channel?") || text.includes("akshat's youtube") || text.includes("akshat's youtube?") || text.includes("akshat youtube") || text.includes("akshat youtube?")) {
+                reply = "Akshat is Owner of YouTube handle : @ASCREATION4610 📺";
+            }
+            else if (text.includes("hello") || text.includes("hi") || text.includes("hey") || text.includes("hii") || text.includes("whatsup") || text.includes("who are you") || text.includes("who are you?") || text.includes("greetings") || text.includes("good morning") || text.includes("good afternoon") || text.includes("good evening")) {
+                reply = "Hello👋, I am AKTRON Akshat's assistant";
+            }
+            else if (text.includes("thank you") || text.includes("thanks") || text.includes("thankyou") || text.includes("thx")) {
+                reply = "You're welcome! 😊";
+            }
+            else if (text.includes("how are you") || text.includes("how are you?") || text.includes("how r u") || text.includes("how r u?")) {
+                reply = "I am Good 🤗. Thanks for asking...";
+            }
+            else {
+                reply = "Sorry, I did not understand...😅";
+            }
+
+
+            setTimeout(() => {
+                chatBox.innerHTML += `<div class="bot-msg">${reply}</div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }, 800);
+        }
+    </script>
+
+</body>
+
+</html>
