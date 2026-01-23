@@ -118,39 +118,94 @@
             chatBox.innerHTML += `<div class="user-msg">${msg}</div>`;
             input.value = "";
 
-            let reply = "Sorry, I did not understand...😅";
-
             let text = msg.toLowerCase();
+            let reply = "";
 
             if (text.includes("what is your name?") || text.includes("your name") || text.includes("who are you") || text.includes("who are you?") || text.includes("introduce yourself") || text.includes("tell me about yourself") || text.includes("about you") || text.includes("yourself") || text.includes("introduce yourself?") || text.includes("tell me about yourself?") || text.includes("about you?")) {
                 reply = "My self AKTRON🤖 Akshat's personal Assistant";
+
             }
             else if (text.includes("akshat") || text.includes("about akshat") || text.includes("who is akshat") || text.includes("tell me about akshat") || text.includes("akshat?") || text.includes("about akshat?") || text.includes("who is akshat?") || text.includes("tell me about akshat?") || text.includes("info about akshat") || text.includes("info about akshat?") || text.includes("akshat info") || text.includes("akshat info?") || text.includes("details about akshat") || text.includes("details about akshat?") || text.includes("akshat details") || text.includes("akshat details?") || text.includes("who is akshat shah") || text.includes("who is akshat shah?") || text.includes("about akshat shah") || text.includes("about akshat shah?") || text.includes("tell me about akshat shah") || text.includes("tell me about akshat shah?") || text.includes("akshat shah info") || text.includes("akshat shah info?") || text.includes("info about akshat shah") || text.includes("info about akshat shah?") || text.includes("akshat shah details") || text.includes("akshat shah details?") || text.includes("details about akshat shah") || text.includes("details about akshat shah?")) {
                 reply = "Akshat is a Computer Engineering student 💻";
             }
             else if (text.includes("college") || text.includes("where do you study") || text.includes("where do you study?") || text.includes("which college do you attend") || text.includes("which college do you attend?") || text.includes("your college") || text.includes("your college?") || text.includes("college info") || text.includes("college info?") || text.includes("info about your college") || text.includes("info about your college?") || text.includes("tell me about your college") || text.includes("tell me about your college?") || text.includes("about your college") || text.includes("about your college?") || text.includes("where is your college located") || text.includes("where is your college located?") || text.includes("which college are you in") || text.includes("which college are you in?") || text.includes("your college details") || text.includes("your college details?") || text.includes("college details") || text.includes("college details?") || text.includes("details about your college") || text.includes("details about your college?") || text.includes("college name") || text.includes("college name?") || text.includes("akshat's college") || text.includes("akshat's college?") || text.includes("where does akshat study") || text.includes("where does akshat study?") || text.includes("akshat college") || text.includes("akshat college?") || text.includes("which college akshat attends") || text.includes("which college akshat attends?") || text.includes("akshat's college info") || text.includes("akshat's college info?") || text.includes("info about akshat's college") || text.includes("info about akshat's college?") || text.includes("tell me about akshat's college") || text.includes("tell me about akshat's college?") || text.includes("about akshat's college") || text.includes("about akshat's college?")) {
                 reply = "Akshat is studying at L.D.R.P - ITR🎓";
+
             }
             else if (text.includes("skills") || text.includes("akshat skills") || text.includes("akshat's skills") || text.includes("what are akshat's skills") || text.includes("what are akshat skills") || text.includes("tell me about akshat's skills") || text.includes("tell me about akshat skills") || text.includes("skills of akshat") || text.includes("skills of akshat?") || text.includes("akshat skillset") || text.includes("akshat skillset?") || text.includes("skillset of akshat") || text.includes("skillset of akshat?") || text.includes("what skills does akshat have") || text.includes("what skills does akshat have?") || text.includes("akshat's skillset") || text.includes("akshat's skillset?") || text.includes("skills akshat has") || text.includes("skills akshat has?") || text.includes("akshat programming skills") || text.includes("akshat programming skills?") || text.includes("programming skills of akshat") || text.includes("programming skills of akshat?") || text.includes("what programming skills does akshat have") || text.includes("what programming skills does akshat have?") || text.includes("tell me about akshat's programming skills") || text.includes("tell me about akshat programming skills")) {
-                reply = "Akshat can Code in C, C++, PYTHON, HTML, CSS, JAVASCRIPT🔥";
+                reply = "Akshat can Code in C, C++, PYTHON, HTML, CSS, JAVASCRIPT And he has some editing skills🔥";
+
             }
             else if (text.includes("youtube") || text.includes("akshat youtube") || text.includes("akshat's youtube") || text.includes("akshat youtube channel") || text.includes("akshat's youtube channel") || text.includes("youtube channel of akshat") || text.includes("youtube channel of akshat?") || text.includes("tell me about akshat's youtube channel") || text.includes("tell me about akshat youtube channel") || text.includes("info about akshat's youtube channel") || text.includes("info about akshat youtube channel") || text.includes("details about akshat's youtube channel") || text.includes("details about akshat youtube channel") || text.includes("which is akshat's youtube channel") || text.includes("which is akshat youtube channel") || text.includes("what is akshat's youtube channel") || text.includes("what is akshat youtube channel") || text.includes("akshat's youtube info") || text.includes("akshat's youtube info?") || text.includes("akshat youtube info") || text.includes("akshat youtube info?") || text.includes("youtube info of akshat") || text.includes("youtube info of akshat?") || text.includes("tell me about akshat's youtube") || text.includes("tell me about akshat youtube") || text.includes("info about akshat's youtube") || text.includes("info about akshat youtube") || text.includes("details about akshat's youtube") || text.includes("details about akshat youtube") || text.includes("akshat youtube channel") || text.includes("akshat youtube channel?") || text.includes("akshat's youtube channel") || text.includes("akshat's youtube channel?") || text.includes("which youtube channel does akshat have") || text.includes("which youtube channel does akshat have?") || text.includes("what youtube channel does akshat have") || text.includes("what youtube channel does akshat have?") || text.includes("youtube channel") || text.includes("youtube channel?") || text.includes("akshat's youtube") || text.includes("akshat's youtube?") || text.includes("akshat youtube") || text.includes("akshat youtube?")) {
                 reply = "Akshat is Owner of YouTube handle : @ASCREATION4610 📺";
+
             }
             else if (text.includes("hello") || text.includes("hi") || text.includes("hey") || text.includes("hii") || text.includes("whatsup") || text.includes("who are you") || text.includes("who are you?") || text.includes("greetings") || text.includes("good morning") || text.includes("good afternoon") || text.includes("good evening")) {
                 reply = "Hello👋, I am AKTRON Akshat's assistant";
+
             }
             else if (text.includes("thank you") || text.includes("thanks") || text.includes("thankyou") || text.includes("thx")) {
                 reply = "You're welcome! 😊";
+
             }
             else if (text.includes("how are you") || text.includes("how are you?") || text.includes("how r u") || text.includes("how r u?")) {
                 reply = "I am Good 🤗. Thanks for asking...";
+
+            }
+            else if (text.includes("help") || text.includes("support") || text.includes("assist") || text.includes("assistance") || text.includes("i need help") || text.includes("i need support") || text.includes("i need assistance") || text.includes("can you help me") || text.includes("can you help me?") || text.includes("can you assist me") || text.includes("can you assist me?") || text.includes("can you support me") || text.includes("can you support me?")) {
+                reply = "I am here to help you! instead of Akshat,I will try my best to assist you.😊";
+
+            }
+            else if (text.includes("ohk") || text.includes("ok") || text.includes("okay") || text.includes("achha") || text.includes("achha!") || text.includes("acha!") || text.includes("acha!") || text.includes("alright") || text.includes("fine") || text.includes("good") || text.includes("great") || text.includes("nice") || text.includes("wonderful") || text.includes("excellent") || text.includes("perfect") || text.includes("awesome") || text.includes("amazing") || text.includes("fantastic") || text.includes("ohh") || text.includes("ohh!") || text.includes("alright!") || text.includes("ok!") || text.includes("okay!") || text.includes("fine!") || text.includes("good!") || text.includes("great!") || text.includes("nice!") || text.includes("wonderful!") || text.includes("excellent!") || text.includes("perfect!") || text.includes("awesome!") || text.includes("amazing!") || text.includes("fantastic!")) {
+                reply = "hmm...";
+
+            }
+            else if (text.includes("nice to meet you") || text.includes("nice to meet you aktron!") || text.includes("i am happy") || text.includes("i am happy!")) {
+                reply = "Glade to hear that! I feel also nice to meet you Buddy!🤗☺️";
+
+            }
+            else if (text.includes("bye") || text.includes("goodbye") || text.includes("see you") || text.includes("see ya") || text.includes("farewell") || text.includes("take care") || text.includes("later") || text.includes("catch you later") || text.includes("talk to you later") || text.includes("bye bye") || text.includes("byebye")) {
+                reply = "Goodbye👋!, Many Greetings from Akshat☺️";
+
+            }
+            else if (text.includes("what can you do") || text.includes("what are your features") || text.includes("your features") || text.includes("features") || text.includes("capabilities") || text.includes("your capabilities") || text.includes("what are your capabilities") || text.includes("tell me your features") || text.includes("tell me your capabilities") || text.includes("help me with") || text.includes("assist me with")) {
+                reply = "I can provide information about Akshat and assist with general queries. How can I help you today?";
+
+            }
+            else if (text.includes("girlfriend") || text.includes("do you have a girlfriend") || text.includes("do you have girlfriend") || text.includes("are you single") || text.includes("relationship status") || text.includes("your relationship status") || text.includes("tell me about your relationship status") || text.includes("tell me about your girlfriend") || text.includes("who is your girlfriend") || text.includes("who is your girlfriend?") || text.includes("do you have a partner") || text.includes("do you have a partner?") || text.includes("your partner") || text.includes("your partner?") || text.incldes("akshat's relationship status") || text.incldes("akshat's relationship status?") || text.incldes("akshat relationship status") || text.incldes("akshat relationship status?") || text.includes("is akshat single") || text.incldes("is akshat single?") || text.incldes("akshat girlfriend") || text.incldes("akshat girlfriend?") || text.incldes("who is akshat's girlfriend") || text.incldes("who is akshat's girlfriend?") || text.incldes("tell me about akshat's girlfriend") || text.incldes("tell me about akshat's girlfriend?") || text.incldes("akshat's partner") || text.incldes("akshat's partner?") || text.incldes("akshat partner") || text.incldes("akshat partner?") || text.includes("girlfriend of akshat") || text.includes("girlfriend of akshat?") || text.includes("relationship") || text.includes("relationship?") || text.includes("partner") || text.includes("partner?") || text.includes("do akshat have a girlfriend") || text.includes("do akshat have a girlfriend?") || text.includes("is akshat in a relationship") || text.includes("is akshat in a relationship?") || text.includes("tell me about akshat's relationship status") || text.includes("tell me about akshat's relationship status?") || text.includes("info about akshat's relationship status") || text.includes("info about akshat's relationship status?") || text.includes("details about akshat's relationship status") || text.includes("details about akshat's relationship status?") || text.includes("info about akshat's girlfriend") || text.includes("info about akshat's girlfriend?") || text.includes("details about akshat's girlfriend") || text.includes("details about akshat's girlfriend?") || text.includes("akshat relationship") || text.includes("akshat relationship?") || text.includes("relationship of akshat") || text.includes("relationship of akshat?") || text.includes("akshat girlfriends") || text.includes("akshat girlfriends?") || text.includes("girlfriends of akshat") || text.includes("girlfriends of akshat?") || text.includes("does akshat have a girlfriend") || text.includes("does akshat have a girlfriend?") || text.includes("girlfriend") || text.includes("girlfriend?") || text.includes("any girl friend of akshat") || text.includes("any girlfriend of akshat?") || text.includes("girl friend") || text.includes("girl friend?")) {
+                reply = "I have no information about that. But I only know that Akshat is not yet married.😅";
+
+            }
+            else if (text.includes("age") || text.includes("how old are you") || text.includes("how old are you?") || text.includes("your age") || text.includes("your age?") || text.includes("tell me your age") || text.includes("tell me your age?") || text.includes("akshat age") || text.includes("akshat age?") || text.includes("age of akshat") || text.includes("age of akshat?") || text.includes("how old is akshat") || text.includes("how old is akshat?") || text.includes("tell me akshat's age") || text.includes("tell me akshat's age?") || text.includes("akshat's age") || text.includes("akshat's age?")) {
+                reply = "Akshat is 18 years old 🎂";
+            }
+            else if (text.includes("birthday") || text.includes("when is your birthday") || text.includes("when is your birthday?") || text.includes("your birthday") || text.includes("your birthday?") || text.includes("tell me your birthday") || text.includes("tell me your birthday?") || text.includes("akshat birthday") || text.includes("akshat birthday?") || text.includes("birthday of akshat") || text.includes("birthday of akshat?") || text.includes("when is akshat's birthday") || text.includes("when is akshat's birthday?") || text.includes("tell me akshat's birthday") || text.includes("tell me akshat's birthday?") || text.includes("akshat's birthday") || text.includes("akshat's birthday?")) {
+                reply = "Akshat's birthday is on 15th May 🎉";
+            }
+            else if (text.includes("hobbies") || text.includes("akshat hobbies") || text.includes("akshat's hobbies") || text.includes("what are akshat's hobbies") || text.includes("what are akshat hobbies") || text.includes("tell me about akshat's hobbies") || text.includes("tell me about akshat hobbies") || text.includes("hobbies of akshat") || text.includes("hobbies of akshat?") || text.includes("akshat hobby") || text.includes("akshat hobby?") || text.includes("hobby of akshat") || text.includes("hobby of akshat?") || text.includes("what hobby does akshat have") || text.includes("what hobby does akshat have?") || text.includes("akshat's hobby") || text.includes("akshat's hobby?") || text.includes("hobbies akshat has") || text.includes("hobbies akshat has?")) {
+                reply = "Akshat loves to code, play video games,Explore new and Adventurous Places and Listening Music🎮💻📱";
+            }
+            else if (text.incldes("phone number") || text.includes("phone no.") || text.includes("contact number of akshat") || text.includes("contact no :") || text.includes("akshat phone number") || text.includes("akshat's phone number") || text.includes("akshat's contact number") || text.includes("what is akshat phone no?") || text.includes("contact info")) {
+                reply = "Sorry!, I cannot share Akshat's Contact number Directly...😅 You can Contact with Akshat through Instagram, LinkedIn, YouTube or E-mail.";
+            }
+            else if (text.includes("E-mail") || text.includes("akshat e-mail") || text.includes("akshat's email")) {
+                reply = "I am really very Sorry Buddy!, But I cannot share directly...";
+            }
+            else if (text.includes("linkedin") || text.includes("linkedin link") || text.includes("akshat linkedin link") || text.includes("akshat's linkedin link") || text.includes("akshat linkedin account link") || text.includes("akshat's linkedin account link") || text.includes("link of akshat linkedin account") || text.includes("link of akshat's linkedin account") || text.includes("linkedin account")) {
+                reply = "Yes sure, here is link that you can send a connection Reaquest to Akshat : www.linkedin.com/in/akshat-shah-5954a02a6";
+            }
+            else if (text.includes("photo") || text.includes("akshat photo") || text.includes("akshat's photo") || text.includes("photo of akshat") || text.includes("image") || text.includes("can you share photo of akshat") || text.includes("can you share image of akshat") || text.includes("photo of akshat") || text.includes("image of akshat")) {
+                reply = "Sorry!, I am not able to share the images...";
+            }
+            else if (text.includes("akshat father") || text.includes("akshat mother") || text.includes("akshat's father") || text.includes("akshat's mother") || text.includes("who is akshat father") || text.includes("who is akshat's father") || text.includes("who is akshat father?") || text.includes("who is akshat's father?") || text.includes("who is akshat mother") || text.includes("who is akshat's mother") || text.includes("who is akshat mother?") || text.includes("who is akshat's mother?")) {
+                reply = "Sorry!, I can't share this information";
+            }
+            else if (text.includes("website") || text.includes("akshat personal website") || text.includes("akshat's personal website") || text.includes("akshat website") || text.includes("akshat's website") || text.includes("akshat website?") || text.includes("akshat's website?") || text.includes("website of akshat") || text.includes("akshat website")) {
+                reply = "NO, Akshat have not a pwesonal website.But he owns a Blog : https://plbfriendsgroup.blogspot.com/?m=1 ";
             }
             else {
-                reply = "Sorry, I did not understand...😅";
+                reply = "Sorry Buddy!,I did not understand.😅";
             }
-
-
             setTimeout(() => {
                 chatBox.innerHTML += `<div class="bot-msg">${reply}</div>`;
                 chatBox.scrollTop = chatBox.scrollHeight;
