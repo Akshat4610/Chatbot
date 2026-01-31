@@ -134,7 +134,7 @@
                 { keywords: ["website", "blog"], reply: "Akshat does not have a personal website, but he owns a blog: https://plbfriendsgroup.blogspot.com/?m=1" },
                 { keywords: ["bye", "goodbye", "see you", "by", "byy"], reply: "Goodbye👋! Many Greetings from Akshat ☺️" },
                 { keywords: ["help", "support", "assist"], reply: "I am here to help you! I will try my best to assist you 😊" },
-                { keywords: ["ohh", "ohh!", "oh", "oh!", "ohk", "ohk!", "oh nice!", "nice", "oh nice", "nice!", "👍", "achha", "achha!", "acha", "acha!", "hmm", "hm", "hm!", "hmm!", "hmmm", "yo"], reply: "hmm😊" },
+                { keywords: ["ohh", "ohh!", "oh", "oh!", "ohk", "ohk!", "oh nice!", "nice", "oh nice", "nice!", "👍", "achha", "achha!", "acha", "acha!", "hmm", "hm", "hm!", "hmm!", "hmmm", "yo", "ok", "okay", "oky"], reply: "hmm😊" },
                 { keywords: ["nice to meet you", "nice to meet you buddy!", "nice to meet you aktron", "nice chat"], reply: "Glad to Hear that !😊, I like your greetings and I also enjoyed chat with you🤗!!!" },
                 { keywords: ["good night", "sweat dreams", "gn", "shubh ratri"], reply: "A very happy Good night buddy!🌃, have a great sleep🥱💤😊" }
             ];
@@ -146,10 +146,10 @@
                 for (let kw of r.keywords) {
                     if (text.includes(kw)) {
                         reply = r.reply;
-                        break; // ek hi match pe ruk jao
+                        break;
                     }
                 }
-                if (reply !== "Sorry Buddy!, I did not understand.😅") break; // ek hi reply set ho gaya
+                if (reply !== "Sorry Buddy!, I did not understand.😅") break;
             }
 
 
