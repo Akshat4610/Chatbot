@@ -17,7 +17,6 @@
         body {
             height: 100%;
             overflow: hidden;
-            /* 🚫 full page scroll band */
             font-family: Arial, sans-serif;
             background: black;
         }
@@ -89,6 +88,64 @@
             border-radius: 20px;
             cursor: pointer;
         }
+
+        /* Typing indicator */
+        .typing {
+            background: white;
+            width: fit-content;
+            padding: 8px 14px;
+            border-radius: 10px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .typing span {
+            width: 6px;
+            height: 6px;
+            background: black;
+            border-radius: 50%;
+            animation: wave 1.2s infinite ease-in-out;
+        }
+
+        .typing span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes wave {
+
+            0%,
+            80%,
+            100% {
+                transform: scale(0);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        #feedbackBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            margin-right: -10px;
+        }
+
+        button#feedbackBtn:hover {
+            background-color: darkorange;
+        }
     </style>
 </head>
 
@@ -118,49 +175,257 @@
             input.value = "";
 
             let text = msg.toLowerCase();
-            const responses = [
-                { keywords: ["hello", "hi", "hey", "hii", "hy", "hyy", "hiii", "good morning", "good afternoon", "good evening"], reply: "Hello👋, I am AKTRON Akshat's assistant" },
-                { keywords: ["what can you do?", "what can you do", "what do you do", "what do you do?", "what is your work"], reply: "I am the Personal chat_Bot Assistant of Akshat Shah. I provide you the information about Akshat." },
-                { keywords: ["your name", "who are you", "who are you?", "introduce yourself", "yourself"], reply: "My self AKTRON 🤖 Akshat's personal Assistant" },
-                { keywords: ["akshat", "who is akshat", "who is akshat?", "akshat work"], reply: "Akshat is a Computer Engineering student 💻" },
-                { keywords: ["college", "in which college akshat study", "in which college akshat study?", "clg", "akshat college", "akshat college?", "akshat clg", "akshat clg?", "college of akshat", "college of akshat?"], reply: "Akshat is studying at L.D.R.P - ITR 🎓" },
-                { keywords: ["skills"], reply: "Akshat can code in C, C++, PYTHON, HTML, CSS, JAVASCRIPT and has some editing skills 🔥" },
-                { keywords: ["youtube", "youtube channel", "yt", "yt channel", "youtube channel link", "youtube link"], reply: "Akshat is Owner of YouTube handle: @ASCREATION4610 📺" },
-                { keywords: ["birthday", "birthdate", "when does akshat's birthday?", "when does the birthday of akshat?", "akshat birthday", "akshat's birthday"], reply: "Akshat's birthday is on 15th May 🎉" },
-                { keywords: ["hobbies", "akshat hobbies", "akshat hobby", "akshat's hobby", "akshat hobbies", "hobby"], reply: "Akshat loves to code, play video games, explore new places and listen to music 🎮💻📱" },
-                { keywords: ["girlfriend", "relationship", "partner", "akshat girlfriend", "akshat's girlfriend", "is akshat single?", "is akshat single", "akshat single", "akshat single?"], reply: "I have no information about that. But I only know that Akshat is not yet married. 😅" },
-                { keywords: ["phone", "contact", "email", "give akshat phone number", "please give akshat phone number", "akshat's phone number", "what is akshat phone number?", "what is akshat phone number", "what is akshat's phone number?", "what is akshat's phone number"], reply: "Sorry! I cannot share Akshat's contact directly 😅. You can contact him via Instagram, LinkedIn, YouTube, or E-mail." },
-                { keywords: ["linkedin"], reply: "Yes sure, here is the link to connect with Akshat: www.linkedin.com/in/akshat-shah-5954a02a6" },
-                { keywords: ["website", "blog"], reply: "Akshat does not have a personal website, but he owns a blog: https://plbfriendsgroup.blogspot.com/?m=1" },
-                { keywords: ["bye", "goodbye", "see you", "by", "byy"], reply: "Goodbye👋! Many Greetings from Akshat ☺️" },
-                { keywords: ["help", "support", "assist"], reply: "I am here to help you! I will try my best to assist you 😊" },
-                { keywords: ["ohh", "ohh!", "oh", "oh!", "ohk", "ohk!", "oh nice!", "nice", "oh nice", "nice!", "👍", "achha", "achha!", "acha", "acha!", "hmm", "hm", "hm!", "hmm!", "hmmm", "yo", "ok", "okay", "oky"], reply: "hmm😊" },
-                { keywords: ["nice to meet you", "nice to meet you buddy!", "nice to meet you aktron", "nice chat"], reply: "Glad to Hear that !😊, I like your greetings and I also enjoyed chat with you🤗!!!" },
-                { keywords: ["good night", "sweat dreams", "gn", "shubh ratri"], reply: "A very happy Good night buddy!🌃, have a great sleep🥱💤😊" }
+
+            const stopWords = ["in", "which", "is", "the", "a", "an", "of", "to", "for", "what", "who", "when", "where", "how", "on", "at", "and", "or", "is", "are", "you", "your", "my", "me", "we", "us", "it", "that", "this", "these", "those", "with", "as", "from", "be", "was", "were", "have", "has", "had", "do", "does", "did", "not", "but", "if", "so", "because", "about", "all", "any", "some", "no", "yes"];
+
+            const intents = [
+                {
+                    name: "college",
+                    keywords: ["college", "study", "clg"],
+                    reply: "Akshat is studying at L.D.R.P - ITR 🎓"
+                },
+                {
+                    name: "about",
+                    keywords: ["akshat"],
+                    reply: "Akshat is computer engineering student 💻"
+                },
+                {
+                    name: "greeting",
+                    keywords: ["hi", "hello", "hey"],
+                    reply: "Hello 👋, I'm AKTRON, Akshat's personal chat-bot."
+                },
+                {
+                    name: "bye",
+                    keywords: ["bye", "goodbye", "see you", "byy", "by", "talk to you later", "catch you later", "see ya", "bye bye", "byee", "byee", "good bye", "see u later", "byee bye", "byebye", "by", "goodbye!", "bye!", "by"],
+                    reply: "Goodbye!👋,Many greetings from Akshat.You are redirected to feedback page. Please give a feedback, your feedback is most helpfull for us to improve our service👍"
+                },
+                {
+                    name: "bye",
+                    keywords: ["bye", "goodbye", "see you", "bye bye", "byy", "see ya", "byee", "talk to you later", "catch you later", "by"],
+                    reply: "Goodbye!👋,Many greetings from Akshat "
+                },
+                {
+                    name: "website",
+                    keywords: ["website", "portfolio", "site"],
+                    reply: "Akshat has not created his own website yet. But he owns a blog: https://plbfriendsgroup.blogspot.com/"
+                },
+                {
+                    name: "girlfriend",
+                    keywords: ["girlfriend", "gf", "love life", "relationship", "partner", "crush", "single", "dating", "married", "wife", "fiancee", "engaged", "significant other", "romantic",],
+                    reply: "I have no information about it, but I only know that Akshat is not yet married."
+                },
+                {
+                    name: "chatbot",
+                    keywords: ["who made you", "who created you", "creator", "developer", "made you", "created you", "your name", "your work", "what can you do"],
+                    reply: "I am AKTRON, Akshat's personal chat-bot, created by Akshat and I can assist you with information about him."
+                },
+                {
+                    name: "contact",
+                    keywords: ["contact", "reach", "email", "phone", "call", "message", "connect"],
+                    reply: "I can not provide direct contact information, but you can reach Akshat through his Instagram page, LinkedIn profile, or other social media platforms."
+                },
+                {
+                    name: "skills",
+                    keywords: ["skills", "expertise", "abilities", "proficiencies", "strengths", "talents"],
+                    reply: "Akshat can code in languages like C, C++, Python, JavaScript, HTML, CSS and is learning more every day! 🚀"
+                },
+                {
+                    name: "future plans",
+                    keywords: ["future plans", "goals", "aspirations", "ambitions", "dreams", "objectives", "career plans"],
+                    reply: "Akshat aims to become a proficient software developer and contribute to innovative tech projects in the future. 🌟"
+                },
+                {
+                    name: "family",
+                    keywords: ["family", "parents", "siblings", "brother", "sister", "relatives", "cousins"],
+                    reply: "Sorry buddy!, I can not share much about Akshat's family."
+                },
+                {
+                    name: "location",
+                    keywords: ["where", "location", "live", "lives", "city", "country", "hometown"],
+                    reply: "Akshat lives in Gujarat, India"
+                },
+                {
+                    name: "social media",
+                    keywords: ["social media", "instagram", "facebook", "twitter", "linkedin", "snapchat", "tiktok"],
+                    reply: "You can find Akshat on Instagram and LinkedIn. Just search for his name!\nInstagram page : akshat_shah_15\n LinkedIn : Akshat Shah\n youtube : @ASCREATION4610"
+                },
+                {
+                    name: "phone",
+                    keywords: ["phone number", "mobile number", "contact number", "call me", "text me", "akshat's phone number"],
+                    reply: "Sorry, I can't share Akshat's phone numberdirectly. Please reach out to him via social media."
+                },
+                {
+                    name: "hobby",
+                    keywords: ["hobby", "hobbies", "interests", "pastime", "leisure activities"],
+                    reply: "Akshat enjoys coding, travelling, and exploring new places and listen to music 🎵"
+                },
+                {
+                    name: "mood",
+                    keywords: ["how are you", "how's it going", "what's up", "how do you feel", "are you okay", "how have you been", "how's everything", "what's new", "how's life", "how's your day", "ohh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "oh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "ohkay", "ok", "fine", "good", "bad", "not good", "not bad", "okay", "alright", "great", "nice", "awesome", "okk", "oky"],
+                    reply: "Yeah buddy!"
+                },
+                {
+                    name: "masti",
+                    keywords: ["masti", "fun", "joke", "laugh", "entertainment", "humor", "comedy", "funny", "hilarious", "amusing", "jokes", "memes", "pranks", "gags", "laughter"],
+                    reply: "Sure buddy! Here's a joke for you: Why don't scientists trust atoms? Because they make up everything! 😄"
+                },
+                {
+                    name: "bot",
+                    keywords: ["are you a bot", "are you real", "do you have feelings", "can you think", "are you alive", "what are you", "your name", "who are you", "what can you do", "can you learn", "do you understand", "are you intelligent", "can you talk", "can you listen", "do you have emotions", "are you human"],
+                    reply: "I am AKTRON, Akshat's personal chat-bot, created by Akshat and I can assist you with information about him."
+                },
+                {
+                    name: "thanks",
+                    keywords: ["thank you", "thanks", "thx", "thank u", "thankyou", "ty", "tysm"],
+                    reply: "You're welcome! 😊"
+                },
+                {
+                    name: "help",
+                    keywords: ["help", "assist", "support", "aid", "guide", "information", "info", "what can you do"],
+                    reply: "I can provide information about Akshat. Ask me anything related to him!"
+                },
+                {
+                    name: "birthday",
+                    keywords: ["birthday", "when is your birthday", "date of birth", "dob", "birth date"],
+                    reply: "Akshat's birthday is on 15th"
+                },
+                {
+                    name: "age",
+                    keywords: ["age", "how old are you", "your age", "what is your age"],
+                    reply: "Akshat is 18 years old."
+                },
+                {
+                    name: "education",
+                    keywords: ["education", "school", "college", "university", "studies", "degree", "major", "course"],
+                    reply: "Akshat is currently pursuing a degree in Computer Engineering at L.D.R.P - ITR."
+                },
+                {
+                    name: "goals",
+                    keywords: ["goals", "ambitions", "dreams", "aspirations", "objectives", "future plans"],
+                    reply: "Akshat aims to become a proficient software developer and contribute to innovative tech projects in the future. 🌟"
+                },
+                {
+                    name: "work",
+                    keywords: ["work", "job", "career", "profession", "occupation", "what do you do"],
+                    reply: "Akshat is a computer engineering student and aspiring software developer."
+                },
+                {
+                    name: "youtube",
+                    keywords: ["youtube", "channel", "videos", "subscribe", "content", "video", "creator", "youtube channel"],
+                    reply: "Akshat has a YouTube channel named (@ASCREATION4610) where he shares shorts. Check it out and consider subscribing!"
+                },
+                {
+                    name: "whatsapp",
+                    keywords: ["whatsapp", "whatsapp number", "whatsapp contact", "whatsapp me", "whatsapp akshat"],
+                    reply: "Sorry, I can't share Akshat's WhatsApp number directly. Please reach out to him via social media"
+                },
+                {
+                    name: "instagram",
+                    keywords: ["instagram", "instagram handle", "instagram id", "instagram profile", "follow akshat on instagram"],
+                    reply: "You can find Akshat on Instagram at akshat_shah_15. Give him a follow!"
+                },
+                {
+                    name: "linkedin",
+                    keywords: ["linkedin", "linkedin profile", "linkedin id", "connect on linkedin", "follow akshat on linkedin"],
+                    reply: "You can connect with Akshat on LinkedIn at\nwww.linkedin.com/in/akshat-shah-5954a02a6 \nFeel free to send him a connection request!"
+                },
+                {
+                    name: "facebook",
+                    keywords: ["facebook", "facebook profile", "facebook id", "follow akshat on facebook"],
+                    reply: "Sorry, Akshat is not active on Facebook."
+                },
+                {
+                    name: "twitter",
+                    keywords: ["twitter", "twitter handle", "twitter id", "follow akshat on twitter"],
+                    reply: "Sorry, Akshat does not have a Twitter account."
+                },
+                {
+                    name: "snapchat",
+                    keywords: ["snapchat", "snapchat id", "snapchat handle", "follow akshat on snapchat"],
+                    reply: "You can find akshat on snapchat at akshat_shah4610. Add him!"
+                },
+                {
+                    name: "tiktok",
+                    keywords: ["tiktok", "tiktok id", "tiktok handle", "follow akshat on tiktok"],
+                    reply: "Sorry, Akshat does not have a TikTok account."
+                },
+                {
+                    name: "sports",
+                    keywords: ["sports", "games", "athletics", "physical activities", "fitness", "exercise"],
+                    reply: "Akshat enjoys playing cricket and badminton during his free time."
+                },
+                {
+                    name: "friends",
+                    keywords: ["friends", "buddies", "pals", "companions", "mates", "best friends"],
+                    reply: "Akshat values his friendships and enjoys spending time with his friends."
+                },
+                {
+                    name: "feedback",
+                    keywords: ["feedback", "suggestions", "improvements", "comments", "criticisms", "reviews"],
+                    reply: "I am always looking to improve! If you have any feedback or suggestions, please let me know. Your input helps me become better at assisting you!"
+                }
+
+
             ];
 
-            // default reply
-            let reply = "Sorry Buddy!, I did not understand.😅";
+            // stop-words remove
+            let filteredText = text
+                .split(" ")
+                .filter(word => !stopWords.includes(word))
+                .join(" ");
 
-            for (let r of responses) {
-                for (let kw of r.keywords) {
-                    if (text.includes(kw)) {
-                        reply = r.reply;
-                        break;
+            function getReply(inputText) {
+                let bestMatch = null;
+                let highestScore = 0;
+
+                for (let intent of intents) {
+                    let score = 0;
+                    for (let kw of intent.keywords) {
+                        if (inputText.includes(kw)) score++;
+                    }
+                    if (score > highestScore) {
+                        highestScore = score;
+                        bestMatch = intent;
                     }
                 }
-                if (reply !== "Sorry Buddy!, I did not understand.😅") break;
+
+                if (bestMatch) return bestMatch.reply;
+                return "I am sorry, I didn't understand 😅";
             }
 
+            let reply = getReply(filteredText);
+
+            // typing indicator add
+            let typingDiv = document.createElement("div");
+            typingDiv.className = "typing";
+            typingDiv.innerHTML = `<span></span><span></span><span></span>`;
+            chatBox.appendChild(typingDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
 
 
             setTimeout(() => {
+                typingDiv.remove();   // typing hide
+                let reply = getReply(text);
                 chatBox.innerHTML += `<div class="bot-msg">${reply}</div>`;
                 chatBox.scrollTop = chatBox.scrollHeight;
-            }, 500);
-        }
+            }, 1500);
 
+            if (text.includes("bye") || text.includes("byy") || text.includes("goodbye") || text.includes("see you") || text.includes("by") || text.includes("talk to you later") || text.includes("catch you later") || text.includes("see ya") || text.includes("bye bye") || text.includes("byee") || text.includes("byee") || text.includes("good bye") || text.includes("see u later") || text.includes("byee bye") || text.includes("byebye") || text.includes("by") || text.includes("goodbye!") || text.includes("bye!") || text.includes("by")) {
+                showFeedback();
+            }
+
+        }
+        function showFeedback() {
+            document.getElementById("feedbackBtn").style.display = "block";
+        }
+        function openFeedback() {
+            window.open("https://form.svhrt.com/696c8de031fccd4a51e47322", "_blank");
+        }
     </script>
+    <button id="feedbackBtn" style="display:none;" onclick="openFeedback()">
+        Feedback
+    </button>
+
 
 </body>
 
