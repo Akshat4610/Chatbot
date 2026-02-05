@@ -184,36 +184,37 @@
                     keywords: ["college", "study", "clg"],
                     reply: "Akshat is studying at L.D.R.P - ITR 🎓"
                 },
+
                 {
-                    name: "about",
-                    keywords: ["akshat"],
-                    reply: "Akshat is computer engineering student 💻"
+                    name: "relationship",
+                    keywords: ["relationship", "girlfriend", "gf", "love life", "partner", "crush", "single", "dating", "married", "wife", "fiancee", "engaged", "significant other", "romantic"],
+                    reply: "I have no information about it, but I only know that Akshat is not yet married😅"
                 },
+
                 {
                     name: "greeting",
                     keywords: ["hi", "hello", "hey"],
                     reply: "Hello 👋, I'm AKTRON, Akshat's personal chat-bot."
                 },
+
+                {
+                    name: "hobby",
+                    keywords: ["hobby", "hobbies", "interests", "pastime", "leisure activities"],
+                    reply: "Akshat enjoys coding, travelling, and exploring new places and listen to music 🎵"
+                },
+
                 {
                     name: "bye",
                     keywords: ["bye", "goodbye", "see you", "byy", "by", "talk to you later", "catch you later", "see ya", "bye bye", "byee", "byee", "good bye", "see u later", "byee bye", "byebye", "by", "goodbye!", "bye!", "by"],
                     reply: "Goodbye!👋,Many greetings from Akshat.You are redirected to feedback page. Please give a feedback, your feedback is most helpfull for us to improve our service👍"
                 },
-                {
-                    name: "bye",
-                    keywords: ["bye", "goodbye", "see you", "bye bye", "byy", "see ya", "byee", "talk to you later", "catch you later", "by"],
-                    reply: "Goodbye!👋,Many greetings from Akshat "
-                },
+
                 {
                     name: "website",
                     keywords: ["website", "portfolio", "site"],
                     reply: "Akshat has not created his own website yet. But he owns a blog: https://plbfriendsgroup.blogspot.com/"
                 },
-                {
-                    name: "girlfriend",
-                    keywords: ["girlfriend", "gf", "love life", "relationship", "partner", "crush", "single", "dating", "married", "wife", "fiancee", "engaged", "significant other", "romantic",],
-                    reply: "I have no information about it, but I only know that Akshat is not yet married."
-                },
+
                 {
                     name: "chatbot",
                     keywords: ["who made you", "who created you", "creator", "developer", "made you", "created you", "your name", "your work", "what can you do"],
@@ -254,11 +255,7 @@
                     keywords: ["phone number", "mobile number", "contact number", "call me", "text me", "akshat's phone number"],
                     reply: "Sorry, I can't share Akshat's phone numberdirectly. Please reach out to him via social media."
                 },
-                {
-                    name: "hobby",
-                    keywords: ["hobby", "hobbies", "interests", "pastime", "leisure activities"],
-                    reply: "Akshat enjoys coding, travelling, and exploring new places and listen to music 🎵"
-                },
+
                 {
                     name: "mood",
                     keywords: ["how are you", "how's it going", "what's up", "how do you feel", "are you okay", "how have you been", "how's everything", "what's new", "how's life", "how's your day", "ohh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "oh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "ohkay", "ok", "fine", "good", "bad", "not good", "not bad", "okay", "alright", "great", "nice", "awesome", "okk", "oky"],
@@ -351,7 +348,7 @@
                 },
                 {
                     name: "sports",
-                    keywords: ["sports", "games", "athletics", "physical activities", "fitness", "exercise"],
+                    keywords: ["sports", "games", "athletics", "physical activities", "fitness", "exercise", "interests", "interest of sports"],
                     reply: "Akshat enjoys playing cricket and badminton during his free time."
                 },
                 {
@@ -390,7 +387,12 @@
                 }
 
                 if (bestMatch) return bestMatch.reply;
-                return "I am sorry, I didn't understand 😅";
+
+                else if (text == "akshat" || text == "akshat shah" || text == "akshat's name" || text == "who is akshat" || text.includes("tell me about akshat") || text.includes("about akshat") || text.includes("information about akshat") || text.includes("describe akshat") || text.includes("who is akshat shah") || text.includes("know about akshat") || text.includes("akshat")) {
+                    return "Akshat is a computer engineering student and aspiring software developer. He is passionate about coding and technology, and enjoys learning new programming languages and frameworks. In his free time, Akshat likes to travel, explore new places, and listen to music. He is also active on social media, where he shares his thoughts and experiences with his followers.";
+                }
+                else return "I am sorry, I didn't understand 😅";
+
             }
 
             let reply = getReply(filteredText);
@@ -410,7 +412,8 @@
                 chatBox.scrollTop = chatBox.scrollHeight;
             }, 1500);
 
-            if (text.includes("bye") || text.includes("byy") || text.includes("goodbye") || text.includes("see you") || text.includes("by") || text.includes("talk to you later") || text.includes("catch you later") || text.includes("see ya") || text.includes("bye bye") || text.includes("byee") || text.includes("byee") || text.includes("good bye") || text.includes("see u later") || text.includes("byee bye") || text.includes("byebye") || text.includes("by") || text.includes("goodbye!") || text.includes("bye!") || text.includes("by")) {
+
+            if (text == "bye" || text == "byy" || text == "goodbye" || text == "see you" || text == "by" || text == "talk to you later" || text.includes("catch you later") || text.includes("see ya") || text.includes("bye bye") || text.includes("byee") || text.includes("byee") || text.includes("good bye") || text.includes("see u later") || text.includes("byee bye") || text.includes("byebye")) {
                 showFeedback();
             }
 
