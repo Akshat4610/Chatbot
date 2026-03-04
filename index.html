@@ -155,8 +155,9 @@
         <div class="header">Akshat's Assistant 🤖</div>
 
         <div class="chatBox" id="chatBox">
-            <div class="bot-msg">Hello Buddy! 👋</div>
+
         </div>
+
 
         <div class="chat_input">
             <input type="text" id="userInput" placeholder="Type your message..." />
@@ -165,7 +166,29 @@
     </div>
 
     <script>
+        function setCookie(name, value) {
+            let date = new Date();
+            date.setFullYear(date.getFullYear() + 100); // 100 years expiry 😎
+            let expires = "; expires=" + date.toUTCString();
+            document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i].trim();
+                if (c.indexOf(nameEQ) === 0) {
+                    return decodeURIComponent(c.substring(nameEQ.length));
+                }
+            }
+            return null;
+        }
+
         function sendMessage() {
+
+            let response = "";
+            let found = false;
             let input = document.getElementById("userInput");
             let msg = input.value.trim();
             if (msg === "") return;
@@ -176,6 +199,37 @@
 
             let text = msg.toLowerCase();
 
+            // 👤 STRONG NAME DETECTION SYSTEM
+            if (text.includes("my name is")) {
+
+                // original message se naam nikalo (case preserve karne ke liye)
+                let name = msg.split(/my name is/i)[1];
+
+                if (name) {
+                    name = name.trim();
+
+                    if (name.length > 0) {
+
+                        setCookie("username", name, 7);
+
+                        let chatBox = document.getElementById("chatBox");
+
+                        let typingDiv = document.createElement("div");
+                        typingDiv.className = "typing";
+                        typingDiv.innerHTML = `<span></span><span></span><span></span>`;
+                        chatBox.appendChild(typingDiv);
+
+                        setTimeout(() => {
+                            typingDiv.remove();
+                            chatBox.innerHTML += `<div class="bot-msg">Nice to meet you ${name} 😎🔥</div>`;
+                            chatBox.scrollTop = chatBox.scrollHeight;
+                        }, 1000);
+
+                    }
+                }
+
+                return; // ⚠ VERY IMPORTANT
+            }
             const stopWords = ["in", "which", "is", "the", "a", "an", "of", "to", "for", "what", "who", "when", "where", "how", "on", "at", "and", "or", "is", "are", "you", "your", "my", "me", "we", "us", "it", "that", "this", "these", "those", "with", "as", "from", "be", "was", "were", "have", "has", "had", "do", "does", "did", "not", "but", "if", "so", "because", "about", "all", "any", "some", "no", "yes"];
 
             const intents = [
@@ -438,6 +492,19 @@
         function openFeedback() {
             window.open("https://form.svhrt.com/696c8de031fccd4a51e47322", "_blank");
         }
+
+        window.onload = function () {
+            let savedName = getCookie("username");
+            let chatBox = document.getElementById("chatBox");
+
+            if (savedName) {
+                chatBox.innerHTML += `<div class="bot-msg">Welcome back ${savedName} 😎🔥</div>`;
+            } else {
+                chatBox.innerHTML += `<div class="bot-msg">Hey buddy 👋 What's your name? (Type: my name is ___)</div>`;
+                return sendMessage();
+            }
+        };
+
     </script>
     <button id="feedbackBtn" style="display:none;" onclick="openFeedback()">
         Feedback
