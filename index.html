@@ -41,8 +41,27 @@
             flex: 1;
             overflow-y: auto;
             padding: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+        }
+
+        .chatBox {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px;
+            padding-bottom: 80px;
+
+            scroll-behavior: smooth;
+
+            mask-image: linear-gradient(to bottom,
+                    transparent 0%,
+                    black 5%,
+                    black 85%,
+                    transparent 100%);
+
+            -webkit-mask-image: linear-gradient(to bottom,
+                    transparent 0%,
+                    black 5%,
+                    black 85%,
+                    transparent 100%);
         }
 
         .bot-msg,
@@ -71,6 +90,14 @@
             padding: 10px;
             background: white;
             flex-shrink: 0;
+        }
+
+        .chat_input {
+            position: sticky;
+            bottom: 0;
+            display: flex;
+            gap: 8px;
+            padding: 12px;
         }
 
         .chat_input input {
@@ -148,6 +175,59 @@
         button#feedbackBtn:hover {
             background-color: darkorange;
         }
+
+        .bot-wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .bot-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .floating-bot {
+            position: fixed;
+            bottom: 70px;
+            left: 10px;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .floating-bot img {
+
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+        }
+
+        @keyframes floatBot {
+
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+
+        }
     </style>
 </head>
 
@@ -172,6 +252,10 @@
     <button id="feedbackBtn" style="display:none;" onclick="openFeedback()">
         Feedback
     </button>
+
+    <div class="floating-bot">
+        <img src="chatbot.gif" alt="bot">
+    </div>
 
 
 </body>
