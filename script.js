@@ -17,13 +17,30 @@ function getCookie(name) {
     return null;
 }
 
-function sendMessage() {
+const floatingBot = document.querySelector(".floating-bot");
 
+let hideTimeout;
+function showBot() {
+
+    floatingBot.style.opacity = "1";
+
+    clearTimeout(hideTimeout);
+
+    hideTimeout = setTimeout(() => {
+
+        floatingBot.style.opacity = "0";
+
+    }, 3000);
+}
+
+
+function sendMessage() {
     let response = "";
     let found = false;
     let input = document.getElementById("userInput");
     let msg = input.value.trim();
     if (msg === "") return;
+    showBot
 
     let chatBox = document.getElementById("chatBox");
     chatBox.innerHTML += `<div class="user-msg">${msg}</div>`;
@@ -328,6 +345,13 @@ function openFeedback() {
 window.onload = function () {
     let savedName = getCookie("username");
     let chatBox = document.getElementById("chatBox");
+    window.onload = function () {
+
+        const gif = new Image();
+
+        gif.src = "idle.gif";
+
+    };
 
     if (savedName) {
         chatBox.innerHTML += `
@@ -339,7 +363,7 @@ window.onload = function () {
     } else {
         chatBox.innerHTML += `
 <div class="bot-wrapper">
-    <img src="idle.gif" class="bot-avatar">
+    <img src="AI bot.gif" class="bot-avatar">
     <div class="bot-msg">Hello buddy!👋, I am AKTRON Akshat's Assistant.How can I help you About Akshat? </div>
 </div>
 `;
