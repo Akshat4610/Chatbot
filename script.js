@@ -1,1 +1,348 @@
-const _0x5a8832 = _0x265f; (function (_0x1bbd97, _0x2d7edc) { const _0x420187 = _0x265f, _0x17ca24 = _0x1bbd97(); while (!![]) { try { const _0x37bde1 = -parseInt(_0x420187(0x281)) / 0x1 + parseInt(_0x420187(0x203)) / 0x2 * (parseInt(_0x420187(0x279)) / 0x3) + parseInt(_0x420187(0x239)) / 0x4 + -parseInt(_0x420187(0x247)) / 0x5 + -parseInt(_0x420187(0x289)) / 0x6 * (parseInt(_0x420187(0x25f)) / 0x7) + -parseInt(_0x420187(0x2b6)) / 0x8 + parseInt(_0x420187(0x2a1)) / 0x9 * (parseInt(_0x420187(0x1a3)) / 0xa); if (_0x37bde1 === _0x2d7edc) break; else _0x17ca24['push'](_0x17ca24['shift']()); } catch (_0x79becf) { _0x17ca24['push'](_0x17ca24['shift']()); } } }(_0x5820, 0xa569e)); function setCookie(_0xbdd08a, _0x1d9109) { const _0x182677 = _0x265f; let _0x158926 = new Date(); _0x158926['setFullYear'](_0x158926[_0x182677(0x286)]() + 0x64); let _0x2acde2 = ';\x20expires=' + _0x158926['toUTCString'](); document[_0x182677(0x191)] = _0xbdd08a + '=' + encodeURIComponent(_0x1d9109) + _0x2acde2 + _0x182677(0x19b); } function getCookie(_0x55cc1c) { const _0x505c99 = _0x265f; let _0x360cde = _0x55cc1c + '=', _0x9f7989 = document[_0x505c99(0x191)][_0x505c99(0x297)](';'); for (let _0x277e92 = 0x0; _0x277e92 < _0x9f7989[_0x505c99(0x2ab)]; _0x277e92++) { let _0x102da9 = _0x9f7989[_0x277e92][_0x505c99(0x1c9)](); if (_0x102da9[_0x505c99(0x18c)](_0x360cde) === 0x0) return decodeURIComponent(_0x102da9['substring'](_0x360cde['length'])); } return null; } function _0x5820() { const _0xb392d7 = ['any', 'Yeah\x20buddy!', '<div\x20class=\x22bot-msg\x22>Hey\x20buddy\x20👋\x20What\x27s\x20your\x20name?\x20(Type:\x20my\x20name\x20is\x20___)</div>', 'talk\x20to\x20you\x20later', 'akshat', 'byebye', 'I\x20am\x20AKTRON,\x20Akshat\x27s\x20personal\x20chat-bot,\x20created\x20by\x20Akshat\x20and\x20I\x20can\x20assist\x20you\x20with\x20information\x20about\x20him.', 'youtube', 'talents', ';\x20path=/', 'birthday', 'for', 'how\x27s\x20it\x20going', 'hometown', 'about', 'expertise', 'alright', '20259170DweMon', 'oky', 'Akshat\x20enjoys\x20coding,\x20travelling,\x20and\x20exploring\x20new\x20places\x20and\x20listen\x20to\x20music\x20🎵', 'mood', 'uh\x20oh', 'linkedin\x20profile', 'has', 'Akshat\x20enjoys\x20playing\x20cricket\x20and\x20badminton\x20during\x20his\x20free\x20time.', 'facebook', 'tiktok', 'ohkay', 'interests', 'were', 'sister', 'okk', 'but', 'how\x20are\x20you', 'who\x20made\x20you', 'have', 'pals', 'when', 'meet\x20you\x20buddy', 'those', 'see\x20u\x20later', 'akshat\x27s\x20name', 'Enter', 'aspirations', 'ouch', 'reviews', 'information\x20about\x20you', 'Sorry\x20buddy!,\x20I\x20can\x20not\x20share\x20much\x20about\x20Akshat\x27s\x20family.', 'created\x20you', 'who\x20are\x20you', 'scrollTop', 'are', 'thank\x20you', 'website', '_blank', 'trim', 'hilarious', 'help', 'where', 'suggestions', 'ambitions', 'follow\x20akshat\x20on\x20instagram', 'tiktok\x20handle', '<div\x20class=\x22bot-msg\x22>Welcome\x20back\x20', 'good\x20bye', 'made\x20you', 'videos', 'which\x20languages\x20do\x20you\x20speak', 'snapchat\x20id', 'your', 'how\x20have\x20you\x20been', 'subscribe', 'contact', 'gags', 'what\x20can\x20you\x20do', 'thank\x20u', 'developer', 'mobile\x20number', 'college', '<span></span><span></span><span></span>', 'improvements', 'byee', 'parents', 'happy\x20to\x20meet\x20you', 'your\x20name?', 'goodbye', 'createElement', 'instagram\x20id', 'school', 'oh\x20no', 'whatsapp\x20contact', 'Akshat\x20is\x20studying\x20at\x20L.D.R.P\x20-\x20ITR\x20🎓', 'Akshat\x20has\x20a\x20YouTube\x20channel\x20named\x20(@ASCREATION4610)\x20where\x20he\x20shares\x20shorts.\x20Check\x20it\x20out\x20and\x20consider\x20subscribing!', 'instagram', '</div>', 'profession', 'text\x20me', 'Akshat\x20can\x20code\x20in\x20languages\x20like\x20C,\x20C++,\x20Python,\x20JavaScript,\x20HTML,\x20CSS\x20and\x20is\x20learning\x20more\x20every\x20day!\x20🚀', 'You\x20can\x20connect\x20with\x20Akshat\x20on\x20LinkedIn\x20at\x0awww.linkedin.com/in/akshat-shah-5954a02a6\x20\x0aFeel\x20free\x20to\x20send\x20him\x20a\x20connection\x20request!', 'major', 'future\x20plans', 'brother', 'do\x20you\x20have\x20feelings', 'see\x20you\x20later', 'hobby', 'relationship', 'value', 'username', 'You\x27re\x20welcome!\x20😊', 'information', 'what\x20languages\x20do\x20you\x20understand', 'good\x20to\x20meet\x20you', 'study', '8dNOztR', 'all', 'thx', 'yay', 'skills', 'I\x20have\x20no\x20information\x20about\x20it,\x20but\x20I\x20only\x20know\x20that\x20Akshat\x20is\x20not\x20yet\x20married😅', 'Akshat\x20aims\x20to\x20become\x20a\x20proficient\x20software\x20developer\x20and\x20contribute\x20to\x20innovative\x20tech\x20projects\x20in\x20the\x20future.\x20🌟', 'goals', 'age', 'see\x20you', 'engaged', 'clg', 'call', 'single', 'objectives', 'best\x20friends', 'twitter\x20id', 'You\x20can\x20find\x20Akshat\x20on\x20Instagram\x20at\x20akshat_shah_15.\x20Give\x20him\x20a\x20follow!', 'I\x20can\x20understand\x20and\x20respond\x20in\x20English\x20only,\x20you\x20can\x20chat\x20with\x20me\x20in\x20English\x20for\x20the\x20best\x20experience!', 'instagram\x20handle', 'crush', 'tysm', 'exercise', 'sports', 'you', 'meet\x20you', 'degree', 'not\x20bad', 'join', 'assist', 'describe\x20yourself', 'instagram\x20profile', 'style', 'goodbye!', 'lives', '<div\x20class=\x22user-msg\x22>', 'appendChild', 'jokes', 'comedy', 'that', 'joke', 'yawn', 'know\x20about\x20akshat', 'city', 'your\x20name', 'byy', 'date\x20of\x20birth', 'did', 'love\x20life', 'masti', 'work', 'innerHTML', 'follow\x20akshat\x20on\x20twitter', 'tell\x20me\x20about\x20yourself', '1015864DZZdQW', 'when\x20is\x20your\x20birthday', 'display', 'chatBox', 'tell\x20me\x20about\x20akshat', 'sigh', 'info', 'abilities', 'family', 'career\x20plans', 'are\x20you\x20real', 'location', 'content', 'getElementById', '2258030NuWxSb', 'preventDefault', 'connect\x20on\x20linkedin', 'includes', 'thankyou', 'pranks', 'reach', 'Sorry,\x20Akshat\x20is\x20not\x20active\x20on\x20Facebook.', 'Goodbye!👋,Many\x20greetings\x20from\x20Akshat.You\x20can\x20see\x20the\x20feedback\x20button\x20at\x20the\x20place\x20of\x20send\x20button,please\x20give\x20a\x20valuable\x20feedback.Your\x20feedback\x20is\x20most\x20helpfull\x20for\x20us\x20to\x20improve\x20our\x20services👍...', 'phone', 'div', 'relatives', 'which', 'acha', 'was', 'how', 'companions', 'had', 'because', 'can\x20you\x20understand\x20hindi', 'creator', 'from', 'who\x20created\x20you', 'friends', '14LEZdYJ', 'Sorry,\x20Akshat\x20does\x20not\x20have\x20a\x20TikTok\x20account.', 'social\x20media', 'humor', 'facebook\x20profile', 'hobbies', 'You\x20can\x20find\x20Akshat\x20on\x20Instagram\x20and\x20LinkedIn.\x20Just\x20search\x20for\x20his\x20name!\x0aInstagram\x20page\x20:\x20akshat_shah_15\x0a\x20LinkedIn\x20:\x20Akshat\x20Shah\x0a\x20youtube\x20:\x20@ASCREATION4610', 'addEventListener', 'className', 'are\x20you\x20okay', '<div\x20class=\x22bot-msg\x22>', 'Akshat\x20values\x20his\x20friendships\x20and\x20enjoys\x20spending\x20time\x20with\x20his\x20friends.', 'oops', 'bye\x20bye', 'fitness', 'follow\x20akshat\x20on\x20facebook', 'buddies', 'You\x20can\x20find\x20akshat\x20on\x20snapchat\x20at\x20akshat_shah4610.\x20Add\x20him!', 'what\x20is\x20your\x20age', 'achha', 'ohh', 'significant\x20other', 'keydown', 'bye!', 'userInput', 'amusing', '264mWWNpT', 'entertainment', 'bad', 'these', 'hey', 'filter', 'your\x20age', 'married', '363882fQJWmk', 'hii', 'the', 'feedbackBtn', 'dob', 'getFullYear', 'snapchat', 'country', '409974awCakO', 'Sorry,\x20I\x20can\x27t\x20share\x20Akshat\x27s\x20phone\x20numberdirectly.\x20Please\x20reach\x20out\x20to\x20him\x20via\x20social\x20media.', 'scrollHeight', 'remove', 'groan', 'nice\x20to\x20meet', 'live', 'who\x20is\x20akshat\x20shah', 'siblings', 'thanks', 'catch\x20you\x20later', 'introduce\x20yourself', 'about\x20akshat', 'https://form.svhrt.com/696c8de031fccd4a51e47322', 'split', 'aid', 'tiktok\x20id', 'follow\x20akshat\x20on\x20snapchat', 'feedback', 'some', 'leisure\x20activities', 'what\x27s\x20your\x20name', 'video', 'are\x20you\x20human', '9AobFSV', 'see\x20ya', 'information\x20about\x20akshat', 'wow', 'Akshat\x27s\x20birthday\x20is\x20on\x2015th', 'bye', 'this', 'connect', 'can\x20you\x20learn', 'meeting', 'length', 'laugh', 'laughter', 'criticisms', 'twitter', 'how\x20old\x20are\x20you', 'linkedin', 'byee\x20bye', 'can\x20you\x20listen', 'I\x20can\x20provide\x20information\x20about\x20Akshat.\x20Ask\x20me\x20anything\x20related\x20to\x20him!', 'who\x20is\x20akshat', '5204440BDWdTf', '<div\x20class=\x22bot-msg\x22>Nice\x20to\x20meet\x20you\x20', 'what\x20do\x20you\x20do', 'huh', 'good', 'mates', 'whatsapp\x20number', 'keywords', 'block', 'not', 'can\x20you\x20think', 'education', 'what\x20are\x20you', 'youtube\x20channel', 'nice\x20to\x20meet\x20you\x20buddy', 'are\x20you\x20alive', 'hmm', 'memes', 'reply', '\x20😎🔥,I\x20am\x20AKTRON\x20Akshat\x27s\x20personal\x20Assistance.\x20How\x20can\x20I\x20help\x20You\x20about\x20Akshat?</div>', 'fiancee', 'who', 'what', 'chatbot', 'ugh', 'contact\x20number', 'open', 'course', 'not\x20good', 'my\x20name\x20is', 'dreams', 'indexOf', 'pastime', 'guide', 'whatsapp\x20me', 'linkedin\x20id', 'cookie']; _0x5820 = function () { return _0xb392d7; }; return _0x5820(); } function sendMessage() { const _0x436994 = _0x265f; let _0x1cbb6e = '', _0x55df55 = ![], _0xf62eb3 = document[_0x436994(0x246)]('userInput'), _0x43e828 = _0xf62eb3[_0x436994(0x1fc)][_0x436994(0x1c9)](); if (_0x43e828 === '') return; let _0x22ca0e = document['getElementById'](_0x436994(0x23c)); _0x22ca0e[_0x436994(0x236)] += _0x436994(0x226) + _0x43e828 + _0x436994(0x1f0), _0xf62eb3['value'] = ''; let _0x55470c = _0x43e828['toLowerCase'](); if (_0x55470c[_0x436994(0x24a)](_0x436994(0x18a))) { let _0x15e2e2 = _0x43e828[_0x436994(0x297)](/my name is/i)[0x1]; if (_0x15e2e2) { _0x15e2e2 = _0x15e2e2[_0x436994(0x1c9)](); if (_0x15e2e2[_0x436994(0x2ab)] > 0x0) { setCookie(_0x436994(0x1fd), _0x15e2e2, 0x7); let _0x32b710 = document[_0x436994(0x246)]('chatBox'), _0x20fecd = document[_0x436994(0x1e8)](_0x436994(0x251)); _0x20fecd[_0x436994(0x267)] = 'typing', _0x20fecd[_0x436994(0x236)] = _0x436994(0x1e1), _0x32b710[_0x436994(0x227)](_0x20fecd), setTimeout(() => { const _0x41c80c = _0x436994; _0x20fecd[_0x41c80c(0x28c)](), _0x32b710[_0x41c80c(0x236)] += _0x41c80c(0x2b7) + _0x15e2e2 + _0x41c80c(0x2c9), _0x32b710[_0x41c80c(0x1c4)] = _0x32b710[_0x41c80c(0x28b)]; }, 0x3e8); } } return; } const _0x5dd3f6 = ['in', _0x436994(0x253), 'is', _0x436994(0x283), 'a', 'an', 'of', 'to', _0x436994(0x19d), _0x436994(0x183), _0x436994(0x182), _0x436994(0x1b7), _0x436994(0x1cc), _0x436994(0x256), 'on', 'at', 'and', 'or', 'is', _0x436994(0x1c5), _0x436994(0x21b), _0x436994(0x1d7), 'my', 'me', 'we', 'us', 'it', _0x436994(0x22a), _0x436994(0x2a7), _0x436994(0x27c), _0x436994(0x1b9), 'with', 'as', _0x436994(0x25c), 'be', _0x436994(0x255), _0x436994(0x1af), _0x436994(0x1b5), _0x436994(0x1a9), _0x436994(0x258), 'do', 'does', _0x436994(0x232), _0x436994(0x2bf), _0x436994(0x1b2), 'if', 'so', _0x436994(0x259), _0x436994(0x1a0), _0x436994(0x204), _0x436994(0x192), _0x436994(0x29c), 'no', 'yes'], _0x17d04b = [{ 'name': 'college', 'keywords': [_0x436994(0x1e0), _0x436994(0x202), _0x436994(0x20e)], 'reply': _0x436994(0x1ed) }, { 'name': 'relationship', 'keywords': [_0x436994(0x1fb), 'girlfriend', 'gf', _0x436994(0x233), 'partner', _0x436994(0x217), _0x436994(0x210), 'dating', _0x436994(0x280), 'wife', _0x436994(0x181), _0x436994(0x20d), _0x436994(0x274), 'romantic'], 'reply': _0x436994(0x208) }, { 'name': 'greeting', 'keywords': ['hi', 'hello', _0x436994(0x27d), 'hy', _0x436994(0x282), 'hyy', _0x436994(0x1e6), _0x436994(0x294), _0x436994(0x1c3), _0x436994(0x29e), _0x436994(0x238), 'about\x20you', _0x436994(0x1c0), _0x436994(0x221)], 'reply': 'Hello\x20👋,\x20I\x27m\x20AKTRON,\x20Akshat\x27s\x20personal\x20chat-bot.' }, { 'name': _0x436994(0x1fa), 'keywords': ['hobby', _0x436994(0x264), _0x436994(0x1ae), _0x436994(0x18d), _0x436994(0x29d)], 'reply': _0x436994(0x1a5) }, { 'name': 'bye', 'keywords': [_0x436994(0x2a6), _0x436994(0x1e7), 'see\x20you', 'byy', 'by', _0x436994(0x195), 'catch\x20you\x20later', 'see\x20ya', _0x436994(0x26c), _0x436994(0x1e3), _0x436994(0x1e3), 'good\x20bye', _0x436994(0x1ba), 'byee\x20bye', 'byebye', 'by', _0x436994(0x224), _0x436994(0x276), 'by'], 'reply': _0x436994(0x24f) }, { 'name': _0x436994(0x1c7), 'keywords': [_0x436994(0x1c7), 'portfolio', 'site'], 'reply': 'Akshat\x20has\x20not\x20created\x20his\x20own\x20website\x20yet.\x20But\x20he\x20owns\x20a\x20blog:\x20https://plbfriendsgroup.blogspot.com/' }, { 'name': _0x436994(0x184), 'keywords': [_0x436994(0x1b4), _0x436994(0x25d), _0x436994(0x25b), _0x436994(0x1de), _0x436994(0x1d3), _0x436994(0x1c2), 'your\x20name', 'your\x20work', _0x436994(0x1dc)], 'reply': _0x436994(0x198) }, { 'name': 'contact', 'keywords': [_0x436994(0x1da), _0x436994(0x24d), 'email', _0x436994(0x250), _0x436994(0x20f), 'message', _0x436994(0x2a8)], 'reply': 'I\x20can\x20not\x20provide\x20direct\x20contact\x20information,\x20but\x20you\x20can\x20reach\x20Akshat\x20through\x20his\x20Instagram\x20page,\x20LinkedIn\x20profile,\x20or\x20other\x20social\x20media\x20platforms.' }, { 'name': 'skills', 'keywords': [_0x436994(0x207), _0x436994(0x1a1), _0x436994(0x240), 'proficiencies', 'strengths', _0x436994(0x19a)], 'reply': _0x436994(0x1f3) }, { 'name': 'future\x20plans', 'keywords': ['future\x20plans', _0x436994(0x20a), _0x436994(0x1bd), 'ambitions', _0x436994(0x18b), 'objectives', _0x436994(0x242)], 'reply': 'Akshat\x20aims\x20to\x20become\x20a\x20proficient\x20software\x20developer\x20and\x20contribute\x20to\x20innovative\x20tech\x20projects\x20in\x20the\x20future.\x20🌟' }, { 'name': _0x436994(0x241), 'keywords': [_0x436994(0x241), _0x436994(0x1e4), _0x436994(0x291), _0x436994(0x1f7), _0x436994(0x1b0), _0x436994(0x252), 'cousins'], 'reply': _0x436994(0x1c1) }, { 'name': 'location', 'keywords': ['where', _0x436994(0x244), _0x436994(0x28f), _0x436994(0x225), _0x436994(0x22e), _0x436994(0x288), _0x436994(0x19f)], 'reply': 'Akshat\x20lives\x20in\x20Gujarat,\x20India' }, { 'name': _0x436994(0x261), 'keywords': [_0x436994(0x261), _0x436994(0x1ef), _0x436994(0x1ab), 'twitter', _0x436994(0x2b1), _0x436994(0x287), _0x436994(0x1ac)], 'reply': _0x436994(0x265) }, { 'name': _0x436994(0x250), 'keywords': ['phone\x20number', _0x436994(0x1df), _0x436994(0x186), 'call\x20me', _0x436994(0x1f2), 'akshat\x27s\x20phone\x20number'], 'reply': _0x436994(0x28a) }, { 'name': _0x436994(0x1a6), 'keywords': [_0x436994(0x1b3), _0x436994(0x19e), _0x436994(0x268), _0x436994(0x1d8), _0x436994(0x273), _0x436994(0x2c6), _0x436994(0x2b9), _0x436994(0x23e), _0x436994(0x22c), _0x436994(0x28d), 'ugh', _0x436994(0x1eb), _0x436994(0x26b), _0x436994(0x1a7), _0x436994(0x2a4), _0x436994(0x206), _0x436994(0x1be), _0x436994(0x272), _0x436994(0x254), 'oh', 'hmm', _0x436994(0x2b9), _0x436994(0x23e), _0x436994(0x22c), _0x436994(0x28d), _0x436994(0x185), 'oh\x20no', _0x436994(0x26b), 'uh\x20oh', 'wow', _0x436994(0x206), _0x436994(0x1be), _0x436994(0x272), _0x436994(0x254), _0x436994(0x1ad), 'ok', 'fine', _0x436994(0x2ba), _0x436994(0x27b), _0x436994(0x189), _0x436994(0x21e), 'okay', _0x436994(0x1a2), 'great', 'nice', 'awesome', _0x436994(0x1b1), _0x436994(0x1a4)], 'reply': _0x436994(0x193) }, { 'name': _0x436994(0x2aa), 'keywords': ['nice\x20to\x20meet\x20you', _0x436994(0x28e), _0x436994(0x2c4), 'pleased\x20to\x20meet\x20you', _0x436994(0x201), _0x436994(0x1e5), 'glad\x20to\x20meet\x20you', _0x436994(0x21c), _0x436994(0x1b8)], 'reply': 'Glad\x20to\x20hear\x20that🤗!\x20I\x20also\x20Nice\x20to\x20meet\x20you\x20too\x20buddy!\x20😊' }, { 'name': _0x436994(0x234), 'keywords': [_0x436994(0x234), 'fun', _0x436994(0x22b), _0x436994(0x2ac), _0x436994(0x27a), _0x436994(0x262), _0x436994(0x229), 'funny', _0x436994(0x1ca), _0x436994(0x278), _0x436994(0x228), _0x436994(0x2c7), _0x436994(0x24c), _0x436994(0x1db), _0x436994(0x2ad)], 'reply': 'Sure\x20buddy!\x20Here\x27s\x20a\x20joke\x20for\x20you:\x20Why\x20don\x27t\x20scientists\x20trust\x20atoms?\x20Because\x20they\x20make\x20up\x20everything!\x20😄' }, { 'name': 'bot', 'keywords': ['are\x20you\x20a\x20bot', _0x436994(0x243), _0x436994(0x1f8), _0x436994(0x2c0), _0x436994(0x2c5), _0x436994(0x2c2), _0x436994(0x22f), _0x436994(0x1c3), 'what\x20can\x20you\x20do', _0x436994(0x2a9), 'do\x20you\x20understand', 'are\x20you\x20intelligent', 'can\x20you\x20talk', _0x436994(0x2b3), 'do\x20you\x20have\x20emotions', _0x436994(0x2a0)], 'reply': 'I\x20am\x20AKTRON,\x20Akshat\x27s\x20personal\x20chat-bot,\x20created\x20by\x20Akshat\x20and\x20I\x20can\x20assist\x20you\x20with\x20information\x20about\x20him.' }, { 'name': _0x436994(0x292), 'keywords': [_0x436994(0x1c6), 'thanks', _0x436994(0x205), _0x436994(0x1dd), _0x436994(0x24b), 'ty', _0x436994(0x218)], 'reply': _0x436994(0x1fe) }, { 'name': _0x436994(0x1cb), 'keywords': [_0x436994(0x1cb), _0x436994(0x220), 'support', _0x436994(0x298), _0x436994(0x18e), _0x436994(0x1ff), _0x436994(0x23f), _0x436994(0x1dc)], 'reply': _0x436994(0x2b4) }, { 'name': _0x436994(0x19c), 'keywords': [_0x436994(0x19c), _0x436994(0x23a), _0x436994(0x231), _0x436994(0x285), 'birth\x20date'], 'reply': _0x436994(0x2a5) }, { 'name': 'age', 'keywords': [_0x436994(0x20b), _0x436994(0x2b0), _0x436994(0x27f), _0x436994(0x271)], 'reply': 'Akshat\x20is\x2018\x20years\x20old.' }, { 'name': _0x436994(0x2c1), 'keywords': [_0x436994(0x2c1), _0x436994(0x1ea), _0x436994(0x1e0), 'university', 'studies', _0x436994(0x21d), _0x436994(0x1f5), _0x436994(0x188)], 'reply': 'Akshat\x20is\x20currently\x20pursuing\x20a\x20degree\x20in\x20Computer\x20Engineering\x20at\x20L.D.R.P\x20-\x20ITR.' }, { 'name': 'goals', 'keywords': [_0x436994(0x20a), _0x436994(0x1ce), _0x436994(0x18b), 'aspirations', _0x436994(0x211), _0x436994(0x1f6)], 'reply': _0x436994(0x209) }, { 'name': _0x436994(0x235), 'keywords': [_0x436994(0x235), 'job', 'career', _0x436994(0x1f1), 'occupation', _0x436994(0x2b8)], 'reply': 'Akshat\x20is\x20a\x20computer\x20engineering\x20student\x20and\x20aspiring\x20software\x20developer.' }, { 'name': _0x436994(0x199), 'keywords': [_0x436994(0x199), 'channel', _0x436994(0x1d4), _0x436994(0x1d9), _0x436994(0x245), _0x436994(0x29f), _0x436994(0x25b), _0x436994(0x2c3)], 'reply': _0x436994(0x1ee) }, { 'name': 'whatsapp', 'keywords': ['whatsapp', _0x436994(0x2bc), _0x436994(0x1ec), _0x436994(0x18f), 'whatsapp\x20akshat'], 'reply': 'Sorry,\x20I\x20can\x27t\x20share\x20Akshat\x27s\x20WhatsApp\x20number\x20directly.\x20Please\x20reach\x20out\x20to\x20him\x20via\x20social\x20media' }, { 'name': _0x436994(0x1ef), 'keywords': [_0x436994(0x1ef), _0x436994(0x216), _0x436994(0x1e9), _0x436994(0x222), _0x436994(0x1cf)], 'reply': _0x436994(0x214) }, { 'name': 'linkedin', 'keywords': ['linkedin', _0x436994(0x1a8), _0x436994(0x190), _0x436994(0x249), 'follow\x20akshat\x20on\x20linkedin'], 'reply': _0x436994(0x1f4) }, { 'name': _0x436994(0x1ab), 'keywords': [_0x436994(0x1ab), _0x436994(0x263), 'facebook\x20id', _0x436994(0x26e)], 'reply': _0x436994(0x24e) }, { 'name': 'twitter', 'keywords': [_0x436994(0x2af), 'twitter\x20handle', _0x436994(0x213), _0x436994(0x237)], 'reply': 'Sorry,\x20Akshat\x20does\x20not\x20have\x20a\x20Twitter\x20account.' }, { 'name': _0x436994(0x287), 'keywords': [_0x436994(0x287), _0x436994(0x1d6), 'snapchat\x20handle', _0x436994(0x29a)], 'reply': _0x436994(0x270) }, { 'name': _0x436994(0x1ac), 'keywords': [_0x436994(0x1ac), _0x436994(0x299), _0x436994(0x1d0), 'follow\x20akshat\x20on\x20tiktok'], 'reply': _0x436994(0x260) }, { 'name': 'sports', 'keywords': [_0x436994(0x21a), 'games', 'athletics', 'physical\x20activities', _0x436994(0x26d), _0x436994(0x219), 'interests', 'interest\x20of\x20sports'], 'reply': _0x436994(0x1aa) }, { 'name': _0x436994(0x25e), 'keywords': [_0x436994(0x25e), _0x436994(0x26f), _0x436994(0x1b6), _0x436994(0x257), _0x436994(0x2bb), _0x436994(0x212)], 'reply': _0x436994(0x26a) }, { 'name': _0x436994(0x29b), 'keywords': [_0x436994(0x29b), _0x436994(0x1cd), _0x436994(0x1e2), 'comments', _0x436994(0x2ae), _0x436994(0x1bf)], 'reply': 'I\x20am\x20always\x20looking\x20to\x20improve!\x20If\x20you\x20have\x20any\x20feedback\x20or\x20suggestions,\x20at\x20the\x20end\x20of\x20our\x20conversation\x20you\x20only\x20say\x20(bye).The\x20feedback\x20button\x20will\x20appear👍☺️...' }, { 'name': 'emojis', 'keywords': ['😀', '😂', '😍', '😊', '😎', '🤔', '😅', '🤣', '😆', '😎', '😁', '😄', '😎'], 'reply': '😅' }, { 'name': 'language', 'keywords': [_0x436994(0x25a), 'can\x20you\x20understand\x20english', 'can\x20you\x20understand\x20gujarati', _0x436994(0x200), _0x436994(0x1d5)], 'reply': _0x436994(0x215) }]; let _0x69e68e = _0x55470c[_0x436994(0x297)]('\x20')[_0x436994(0x27e)](_0x2c37e4 => !_0x5dd3f6[_0x436994(0x24a)](_0x2c37e4))[_0x436994(0x21f)]('\x20'); function _0x54fa1d(_0x205bca) { const _0x1090ad = _0x436994; let _0x1270df = null, _0x5c1b2d = 0x0; for (let _0x3da4f6 of _0x17d04b) { let _0x171b26 = 0x0; for (let _0x2041a7 of _0x3da4f6[_0x1090ad(0x2bd)]) { if (_0x205bca[_0x1090ad(0x24a)](_0x2041a7)) _0x171b26++; } _0x171b26 > _0x5c1b2d && (_0x5c1b2d = _0x171b26, _0x1270df = _0x3da4f6); } if (_0x1270df) return _0x1270df[_0x1090ad(0x2c8)]; else { if (_0x55470c == _0x1090ad(0x196) || _0x55470c == 'akshat\x20shah' || _0x55470c == _0x1090ad(0x1bb) || _0x55470c == _0x1090ad(0x2b5) || _0x55470c[_0x1090ad(0x24a)](_0x1090ad(0x23d)) || _0x55470c[_0x1090ad(0x24a)](_0x1090ad(0x295)) || _0x55470c['includes'](_0x1090ad(0x2a3)) || _0x55470c['includes']('describe\x20akshat') || _0x55470c['includes'](_0x1090ad(0x290)) || _0x55470c[_0x1090ad(0x24a)](_0x1090ad(0x22d)) || _0x55470c['includes'](_0x1090ad(0x196))) return 'Akshat\x20is\x20a\x20computer\x20engineering\x20student\x20and\x20aspiring\x20software\x20developer.\x20He\x20is\x20passionate\x20about\x20coding\x20and\x20technology,\x20and\x20enjoys\x20learning\x20new\x20programming\x20languages\x20and\x20frameworks.\x20In\x20his\x20free\x20time,\x20Akshat\x20likes\x20to\x20travel,\x20explore\x20new\x20places,\x20and\x20listen\x20to\x20music.\x20He\x20is\x20also\x20active\x20on\x20social\x20media,\x20where\x20he\x20shares\x20his\x20thoughts\x20and\x20experiences\x20with\x20his\x20followers.'; else return 'I\x20am\x20sorry,\x20I\x20didn\x27t\x20understand\x20😅'; } } let _0x3e9716 = _0x54fa1d(_0x69e68e), _0xff61e1 = document[_0x436994(0x1e8)](_0x436994(0x251)); _0xff61e1[_0x436994(0x267)] = 'typing', _0xff61e1[_0x436994(0x236)] = _0x436994(0x1e1), _0x22ca0e[_0x436994(0x227)](_0xff61e1), _0x22ca0e[_0x436994(0x1c4)] = _0x22ca0e[_0x436994(0x28b)], setTimeout(() => { const _0x433c37 = _0x436994; _0xff61e1[_0x433c37(0x28c)](); let _0x17e6e6 = _0x54fa1d(_0x55470c); _0x22ca0e[_0x433c37(0x236)] += _0x433c37(0x269) + _0x17e6e6 + _0x433c37(0x1f0), _0x22ca0e['scrollTop'] = _0x22ca0e[_0x433c37(0x28b)]; }, 0x5dc), (_0x55470c == _0x436994(0x2a6) || _0x55470c == _0x436994(0x230) || _0x55470c == _0x436994(0x1e7) || _0x55470c == _0x436994(0x20c) || _0x55470c == 'by' || _0x55470c == 'talk\x20to\x20you\x20later' || _0x55470c[_0x436994(0x24a)](_0x436994(0x293)) || _0x55470c[_0x436994(0x24a)](_0x436994(0x2a2)) || _0x55470c[_0x436994(0x24a)](_0x436994(0x26c)) || _0x55470c[_0x436994(0x24a)](_0x436994(0x1e3)) || _0x55470c[_0x436994(0x24a)](_0x436994(0x1e3)) || _0x55470c['includes'](_0x436994(0x1d2)) || _0x55470c[_0x436994(0x24a)]('see\x20u\x20later') || _0x55470c[_0x436994(0x24a)](_0x436994(0x2b2)) || _0x55470c['includes'](_0x436994(0x197)) || _0x55470c['includes']('by') || _0x55470c[_0x436994(0x24a)](_0x436994(0x224)) || _0x55470c[_0x436994(0x24a)](_0x436994(0x276)) || _0x55470c[_0x436994(0x24a)]('by') || _0x55470c[_0x436994(0x24a)](_0x436994(0x1f9)) || _0x55470c[_0x436994(0x24a)](_0x436994(0x1ba)) || _0x55470c[_0x436994(0x24a)](_0x436994(0x195))) && showFeedback(); } document[_0x5a8832(0x246)](_0x5a8832(0x277))[_0x5a8832(0x266)](_0x5a8832(0x275), function (_0x1f0e4a) { const _0x26ab91 = _0x5a8832; _0x1f0e4a['key'] === _0x26ab91(0x1bc) && (_0x1f0e4a[_0x26ab91(0x248)](), sendMessage()); }); function _0x265f(_0x3eb066, _0x377924) { _0x3eb066 = _0x3eb066 - 0x181; const _0x58206a = _0x5820(); let _0x265fa5 = _0x58206a[_0x3eb066]; return _0x265fa5; } function showFeedback() { const _0x4ab5cd = _0x5a8832; document[_0x4ab5cd(0x246)](_0x4ab5cd(0x284))[_0x4ab5cd(0x223)][_0x4ab5cd(0x23b)] = _0x4ab5cd(0x2be); } function openFeedback() { const _0x41b4a8 = _0x5a8832; window[_0x41b4a8(0x187)](_0x41b4a8(0x296), _0x41b4a8(0x1c8)); } window['onload'] = function () { const _0x11cfa2 = _0x5a8832; let _0xcbe899 = getCookie(_0x11cfa2(0x1fd)), _0x49de27 = document['getElementById'](_0x11cfa2(0x23c)); if (_0xcbe899) _0x49de27[_0x11cfa2(0x236)] += _0x11cfa2(0x1d1) + _0xcbe899 + '\x20😎🔥,\x20How\x20can\x20I\x20help\x20you\x20about\x20Akshat?</div>'; else return _0x49de27[_0x11cfa2(0x236)] += _0x11cfa2(0x194), sendMessage(); };
+function setCookie(name, value) {
+    let date = new Date();
+    date.setFullYear(date.getFullYear() + 100); // 100 years expiry 😎
+    let expires = "; expires=" + date.toUTCString();
+    document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
+}
+
+function getCookie(name) {
+    let nameEQ = name + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(nameEQ) === 0) {
+            return decodeURIComponent(c.substring(nameEQ.length));
+        }
+    }
+    return null;
+}
+
+function sendMessage() {
+
+    let response = "";
+    let found = false;
+    let input = document.getElementById("userInput");
+    let msg = input.value.trim();
+    if (msg === "") return;
+
+    let chatBox = document.getElementById("chatBox");
+    chatBox.innerHTML += `<div class="user-msg">${msg}</div>`;
+    input.value = "";
+
+    let text = msg.toLowerCase();
+
+    // 👤 STRONG NAME DETECTION SYSTEM
+    if (text.includes("my name is")) {
+
+        // original message se naam nikalo (case preserve karne ke liye)
+        let name = msg.split(/my name is/i)[1];
+
+        if (name) {
+            name = name.trim();
+
+            if (name.length > 0) {
+
+                setCookie("username", name, 7);
+
+                let chatBox = document.getElementById("chatBox");
+
+                let typingDiv = document.createElement("div");
+                typingDiv.className = "typing";
+                typingDiv.innerHTML = `<span></span><span></span><span></span>`;
+                chatBox.appendChild(typingDiv);
+
+                setTimeout(() => {
+                    typingDiv.remove();
+                    chatBox.innerHTML += `<div class="bot-msg">Nice to meet you ${name}😎, How can I help you about Akshat?</div>`;
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }, 1000);
+
+            }
+        }
+
+        return; // ⚠ VERY IMPORTANT
+    }
+    const stopWords = ["in", "which", "is", "the", "a", "an", "of", "to", "for", "what", "who", "when", "where", "how", "on", "at", "and", "or", "is", "are", "you", "your", "my", "me", "we", "us", "it", "that", "this", "these", "those", "with", "as", "from", "be", "was", "were", "have", "has", "had", "do", "does", "did", "not", "but", "if", "so", "because", "about", "all", "any", "some", "no", "yes"];
+
+    const intents = [
+        {
+            name: "college",
+            keywords: ["college", "study", "clg"],
+            reply: "Akshat is studying at L.D.R.P - ITR 🎓"
+        },
+
+        {
+            name: "relationship",
+            keywords: ["relationship", "girlfriend", "gf", "love life", "partner", "crush", "single", "dating", "married", "wife", "fiancee", "engaged", "significant other", "romantic"],
+            reply: "I have no information about it, but I only know that Akshat is not yet married😅"
+        },
+
+        {
+            name: "greeting",
+            keywords: ["hi", "hello", "hey", "hy", "hii", "hyy", "your name?", "introduce yourself", "who are you", "what's your name", "tell me about yourself", "about you", "information about you", "describe yourself"],
+            reply: "Hello 👋, I'm AKTRON, Akshat's personal chat-bot. What kind of questions do you have about Akshat? feel free to ask me anything related to him!"
+        },
+
+        {
+            name: "hobby",
+            keywords: ["hobby", "hobbies", "interests", "pastime", "leisure activities"],
+            reply: "Akshat enjoys coding, travelling, and exploring new places and listen to music 🎵"
+        },
+
+        {
+            name: "bye",
+            keywords: ["bye", "goodbye", "see you", "byy", "by", "talk to you later", "catch you later", "see ya", "bye bye", "byee", "byee", "good bye", "see u later", "byee bye", "byebye", "by", "goodbye!", "bye!", "by"],
+            reply: "Goodbye!👋,Many greetings from Akshat.You can see the feedback button at the place of send button,please give a valuable feedback.Your feedback is most helpfull for us to improve our services👍..."
+        },
+
+        {
+            name: "website",
+            keywords: ["website", "portfolio", "site"],
+            reply: "Akshat has not created his own website yet. But he owns a blog: https://plbfriendsgroup.blogspot.com/"
+        },
+
+        {
+            name: "chatbot",
+            keywords: ["who made you", "who created you", "creator", "developer", "made you", "created you", "your name", "your work", "what can you do"],
+            reply: "I am AKTRON, Akshat's personal chat-bot, created by Akshat and I can assist you with information about him."
+        },
+        {
+            name: "contact",
+            keywords: ["contact", "reach", "email", "phone", "call", "message", "connect"],
+            reply: "I can not provide direct contact information, but you can reach Akshat through his Instagram page, LinkedIn profile, or other social media platforms."
+        },
+        {
+            name: "skills",
+            keywords: ["skills", "expertise", "abilities", "proficiencies", "strengths", "talents"],
+            reply: "Akshat can code in languages like C, C++, Python, JavaScript, HTML, CSS and is learning more every day! 🚀"
+        },
+        {
+            name: "future plans",
+            keywords: ["future plans", "goals", "aspirations", "ambitions", "dreams", "objectives", "career plans"],
+            reply: "Akshat aims to become a proficient software developer and contribute to innovative tech projects in the future. 🌟"
+        },
+        {
+            name: "family",
+            keywords: ["family", "parents", "siblings", "brother", "sister", "relatives", "cousins"],
+            reply: "Sorry buddy!, I can not share much about Akshat's family."
+        },
+        {
+            name: "location",
+            keywords: ["where", "location", "live", "lives", "city", "country", "hometown"],
+            reply: "Akshat lives in Gujarat, India"
+        },
+        {
+            name: "social media",
+            keywords: ["social media", "instagram", "facebook", "twitter", "linkedin", "snapchat", "tiktok"],
+            reply: "You can find Akshat on Instagram and LinkedIn. Just search for his name!\nInstagram page : akshat_shah_15\n LinkedIn : Akshat Shah\n youtube : @ASCREATION4610"
+        },
+        {
+            name: "phone",
+            keywords: ["phone number", "mobile number", "contact number", "call me", "text me", "akshat's phone number"],
+            reply: "Sorry, I can't share Akshat's phone numberdirectly. Please reach out to him via social media."
+        },
+
+        {
+            name: "mood",
+            keywords: ["how are you", "how's it going", "are you okay", "how have you been", "ohh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "oh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "ohkay", "ok", "fine", "good", "bad", "not good", "not bad", "okay", "alright", "great", "nice", "awesome", "okk", "oky"],
+            reply: "Yeah buddy!"
+        },
+
+        {
+            name: "meeting",
+            keywords: ["nice to meet you", "nice to meet", "nice to meet you buddy", "pleased to meet you", "good to meet you", "happy to meet you", "glad to meet you", "meet you", "meet you buddy"],
+            reply: "Glad to hear that🤗! I also Nice to meet you too buddy! 😊"
+        },
+
+        {
+            name: "masti",
+            keywords: ["masti", "fun", "joke", "laugh", "entertainment", "humor", "comedy", "funny", "hilarious", "amusing", "jokes", "memes", "pranks", "gags", "laughter"],
+            reply: "Sure buddy! Here's a joke for you: Why don't scientists trust atoms? Because they make up everything! 😄"
+        },
+        {
+            name: "bot",
+            keywords: ["are you a bot", "are you real", "do you have feelings", "can you think", "are you alive", "what are you", "your name", "who are you", "what can you do", "can you learn", "do you understand", "are you intelligent", "can you talk", "can you listen", "do you have emotions", "are you human"],
+            reply: "I am AKTRON, Akshat's personal chat-bot, created by Akshat and I can assist you with information about him."
+        },
+        {
+            name: "thanks",
+            keywords: ["thank you", "thanks", "thx", "thank u", "thankyou", "ty", "tysm"],
+            reply: "You're welcome! 😊"
+        },
+        {
+            name: "help",
+            keywords: ["help", "assist", "support", "aid", "guide", "information", "info", "what can you do"],
+            reply: "I can provide information about Akshat. Ask me anything related to him!"
+        },
+        {
+            name: "birthday",
+            keywords: ["birthday", "when is your birthday", "date of birth", "dob", "birth date", "when were you born", "your birthday", "akshat's birthday", "when is akshat's birthday", "when is akshat shah's birthday", "date of birth", "dob of akshat", "birth date of akshat", "when was akshat born", "when was akshat shah born", "what is akshat's birthdate?", "what is akshat's date of birth?", "what is akshat's dob?", "birthdate of akshat", "date of birth of akshat", "dob of akshat", "birthdate"],
+            reply: "Akshat's birthday is on 15th May🎉"
+        },
+        {
+            name: "age",
+            keywords: ["age", "how old are you", "your age", "what is your age"],
+            reply: "Akshat is 18 years old."
+        },
+        {
+            name: "education",
+            keywords: ["education", "school", "college", "university", "studies", "degree", "major", "course"],
+            reply: "Akshat is currently pursuing a degree in Computer Engineering at L.D.R.P - ITR."
+        },
+        {
+            name: "goals",
+            keywords: ["goals", "ambitions", "dreams", "aspirations", "objectives", "future plans"],
+            reply: "Akshat aims to become a proficient software developer and contribute to innovative tech projects in the future. 🌟"
+        },
+        {
+            name: "work",
+            keywords: ["work", "job", "career", "profession", "occupation", "what do you do"],
+            reply: "Akshat is a computer engineering student and aspiring software developer."
+        },
+        {
+            name: "youtube",
+            keywords: ["youtube", "channel", "videos", "subscribe", "content", "video", "creator", "youtube channel"],
+            reply: "Akshat has a YouTube channel named (@ASCREATION4610) where he shares shorts. Check it out and consider subscribing!"
+        },
+        {
+            name: "whatsapp",
+            keywords: ["whatsapp", "whatsapp number", "whatsapp contact", "whatsapp me", "whatsapp akshat"],
+            reply: "Sorry, I can't share Akshat's WhatsApp number directly. Please reach out to him via social media"
+        },
+        {
+            name: "instagram",
+            keywords: ["instagram", "instagram handle", "instagram id", "instagram profile", "follow akshat on instagram"],
+            reply: "You can find Akshat on Instagram at akshat_shah_15. Give him a follow!"
+        },
+        {
+            name: "linkedin",
+            keywords: ["linkedin", "linkedin profile", "linkedin id", "connect on linkedin", "follow akshat on linkedin"],
+            reply: "You can connect with Akshat on LinkedIn at\nwww.linkedin.com/in/akshat-shah-5954a02a6 \nFeel free to send him a connection request!"
+        },
+        {
+            name: "facebook",
+            keywords: ["facebook", "facebook profile", "facebook id", "follow akshat on facebook"],
+            reply: "Sorry, Akshat is not active on Facebook."
+        },
+        {
+            name: "twitter",
+            keywords: ["twitter", "twitter handle", "twitter id", "follow akshat on twitter"],
+            reply: "Sorry, Akshat does not have a Twitter account."
+        },
+        {
+            name: "snapchat",
+            keywords: ["snapchat", "snapchat id", "snapchat handle", "follow akshat on snapchat"],
+            reply: "You can find akshat on snapchat at akshat_shah4610. Add him!"
+        },
+        {
+            name: "tiktok",
+            keywords: ["tiktok", "tiktok id", "tiktok handle", "follow akshat on tiktok"],
+            reply: "Sorry, Akshat does not have a TikTok account."
+        },
+        {
+            name: "sports",
+            keywords: ["sports", "games", "athletics", "physical activities", "fitness", "exercise", "interests", "interest of sports"],
+            reply: "Akshat enjoys playing cricket and badminton during his free time."
+        },
+        {
+            name: "friends",
+            keywords: ["friends", "buddies", "pals", "companions", "mates", "best friends"],
+            reply: "Akshat values his friendships and enjoys spending time with his friends."
+        },
+        {
+            name: "feedback",
+            keywords: ["feedback", "suggestions", "improvements", "comments", "criticisms", "reviews"],
+            reply: "I am always looking to improve! If you have any feedback or suggestions, at the end of our conversation you only say (bye).The feedback button will appear👍☺️..."
+        }
+
+
+    ];
+
+    // stop-words remove
+    let filteredText = text
+        .split(" ")
+        .filter(word => !stopWords.includes(word))
+        .join(" ");
+
+    function getReply(inputText) {
+        let bestMatch = null;
+        let highestScore = 0;
+
+        for (let intent of intents) {
+            let score = 0;
+            for (let kw of intent.keywords) {
+                if (inputText.includes(kw)) score++;
+            }
+            if (score > highestScore) {
+                highestScore = score;
+                bestMatch = intent;
+            }
+        }
+
+        if (bestMatch) return bestMatch.reply;
+
+        else if (text == "akshat" || text == "akshat shah" || text == "akshat's name" || text == "who is akshat" || text.includes("tell me about akshat") || text.includes("about akshat") || text.includes("information about akshat") || text.includes("describe akshat") || text.includes("who is akshat shah") || text.includes("know about akshat") || text.includes("akshat")) {
+            return "Akshat is a computer engineering student and aspiring software developer. He is passionate about coding and technology, and enjoys learning new programming languages and frameworks. In his free time, Akshat likes to travel, explore new places, and listen to music. He is also active on social media, where he shares his thoughts and experiences with his followers.";
+        }
+        else return "I am sorry, I didn't understand 😅";
+
+    }
+
+    let reply = getReply(filteredText);
+
+    // typing indicator add
+    let typingDiv = document.createElement("div");
+    typingDiv.className = "typing";
+    typingDiv.innerHTML = `<span></span><span></span><span></span>`;
+    chatBox.appendChild(typingDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+
+    setTimeout(() => {
+        typingDiv.remove();   // typing hide
+        let reply = getReply(text);
+        chatBox.innerHTML += `<div class="bot-msg">${reply}</div>`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }, 1500);
+
+
+    if (text == "bye" || text == "byy" || text == "goodbye" || text == "see you" || text == "by" || text == "talk to you later" || text.includes("catch you later") || text.includes("see ya") || text.includes("bye bye") || text.includes("byee") || text.includes("byee") || text.includes("good bye") || text.includes("see u later") || text.includes("byee bye") || text.includes("byebye") || text.includes("by") || text.includes("goodbye!") || text.includes("bye!") || text.includes("by") || text.includes("see you later") || text.includes("see u later") || text.includes("talk to you later")) {
+        showFeedback();
+    }
+
+}
+document.getElementById("userInput").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        sendMessage();
+    }
+});
+
+function showFeedback() {
+    document.getElementById("feedbackBtn").style.display = "block";
+}
+function openFeedback() {
+    window.open("https://form.svhrt.com/696c8de031fccd4a51e47322", "_blank");
+}
+
+window.onload = function () {
+    let savedName = getCookie("username");
+    let chatBox = document.getElementById("chatBox");
+
+    if (savedName) {
+        chatBox.innerHTML += `
+<div class="bot-wrapper">
+    <img src="AI bot.gif" class="bot-avatar">
+    <div class="bot-msg">Welcome back ${savedName}😎👋, How can I assist you about Akshat? </div>
+</div>
+`;
+    } else {
+        chatBox.innerHTML += `
+<div class="bot-wrapper">
+    <img src="idle.gif" class="bot-avatar">
+    <div class="bot-msg">Hello buddy!👋, I am AKTRON Akshat's Assistant.How can I help you About Akshat? </div>
+</div>
+`;
+        return sendMessage();
+    }
+};
