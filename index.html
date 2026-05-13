@@ -194,8 +194,8 @@
 
         .floating-bot {
             position: fixed;
-            bottom: 70px;
-            left: 10px;
+            bottom: 55px;
+            left: 1px;
             width: 70px;
             height: 70px;
             display: flex;
@@ -204,29 +204,15 @@
             z-index: 999;
             background: transparent;
             box-shadow: none;
+            transition: opacity 0.5s ease;
+            opacity: 1;
+            pointer-events: none;
         }
 
         .floating-bot img {
 
             width: 90%;
             height: 90%;
-            object-fit: cover;
-        }
-
-        @keyframes floatBot {
-
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
-
         }
     </style>
 </head>
