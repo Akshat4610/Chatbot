@@ -103,7 +103,7 @@ function sendMessage() {
         {
             name: "how are you",
             keywords: ["how are you", "how's it going", "are you okay", "how have you been", "how are you today", "how are you doing", "what's up", "how's everything", "how's life", "how's your day", "are you good", "are you fine"],
-            reply: "I'm Good☺️, thanks for asking! How about you?"
+            reply: "I'm Good ☺️, thanks for asking! How about you?"
         },
 
         {
@@ -173,7 +173,7 @@ function sendMessage() {
 
         {
             name: "mood",
-            keywords: ["ohh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "oh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "ohkay", "ok", "bad", "not good", "not bad", "okay", "alright", "great", "nice", "awesome", "okk", "oky"],
+            keywords: ["ohh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "oh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "ohkay", "ok", "bad", "not", "not bad", "okay", "alright", "great", "nice", "awesome", "okk", "oky"],
             reply: "Yeah buddy!"
         },
 
