@@ -173,7 +173,7 @@ function sendMessage() {
 
         {
             name: "mood",
-            keywords: ["ohh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "oh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "ohkay", "ok", "fine", "good", "bad", "not good", "not bad", "okay", "alright", "great", "nice", "awesome", "okk", "oky"],
+            keywords: ["ohh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "oh", "hmm", "huh", "sigh", "yawn", "groan", "ugh", "oh no", "oops", "uh oh", "wow", "yay", "ouch", "achha", "acha", "ohkay", "ok", "bad", "not good", "not bad", "okay", "alright", "great", "nice", "awesome", "okk", "oky"],
             reply: "Yeah buddy!"
         },
 
