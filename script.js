@@ -107,7 +107,7 @@ function sendMessage() {
         },
 
         {
-            name: "answer to how are you",
+            name: "I am good",
             keywords: ["I am also good", "I am fine", "I am doing well", "I am great", "I am okay", "I am not good", "I am not bad", "I am alright", "I am awesome", "I am okk", "I am oky"],
             reply: "That's great to hear! If you have any questions about Akshat, feel free to ask!"
         },
