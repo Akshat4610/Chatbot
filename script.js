@@ -101,6 +101,18 @@ function sendMessage() {
         },
 
         {
+            name: "how are you",
+            keywords: ["how are you", "how's it going", "are you okay", "how have you been", "how are you today", "how are you doing", "what's up", "how's everything", "how's life", "how's your day", "are you good", "are you fine"],
+            reply: "I'm Good☺️, thanks for asking! How about you?"
+        },
+
+        {
+            name: "answer to how are you",
+            keywords: ["I am also good", "I am fine", "I am doing well", "I am great", "I am okay", "I am not good", "I am not bad", "I am alright", "I am awesome", "I am okk", "I am oky"],
+            reply: "That's great to hear! If you have any questions about Akshat, feel free to ask!"
+        },
+
+        {
             name: "hobby",
             keywords: ["hobby", "hobbies", "interests", "pastime", "leisure activities"],
             reply: "Akshat enjoys coding, travelling, and exploring new places and listen to music 🎵"
