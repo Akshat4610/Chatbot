@@ -1,3 +1,7 @@
+if (Notification.permission !== "granted") {
+    Notification.requestPermission();
+}
+
 function setCookie(name, value) {
     let date = new Date();
     date.setFullYear(date.getFullYear() + 100); // 100 years expiry 😎
@@ -47,6 +51,39 @@ function sendMessage() {
     input.value = "";
 
     let text = msg.toLowerCase();
+
+    function checkReminders() {
+
+        let reminders =
+            JSON.parse(localStorage.getItem("aktronReminders")) || [];
+
+        let now = new Date();
+
+        let currentTime =
+            String(now.getHours()).padStart(2, "0") +
+            ":" +
+            String(now.getMinutes()).padStart(2, "0");
+
+        reminders.forEach((reminder, index) => {
+
+            if (reminder.time === currentTime) {
+
+                new Notification("⏰ AKTRON Reminder", {
+                    body: reminder.text,
+                    icon: "AI bot.png"
+                });
+
+                reminders.splice(index, 1);
+
+                localStorage.setItem(
+                    "aktronReminders",
+                    JSON.stringify(reminders)
+                );
+            }
+
+        });
+
+    }
 
     // 👤 STRONG NAME DETECTION SYSTEM
     if (text.includes("my name is")) {
@@ -382,3 +419,5 @@ window.onload = function () {
         return sendMessage();
     }
 };
+
+setInterval(checkReminders, 1000);
