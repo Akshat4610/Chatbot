@@ -23,28 +23,12 @@ function getCookie(name) {
 
 const floatingBot = document.querySelector(".floating-bot");
 
-let hideTimeout;
-function showBot() {
-
-    floatingBot.style.opacity = "1";
-
-    clearTimeout(hideTimeout);
-
-    hideTimeout = setTimeout(() => {
-
-        floatingBot.style.opacity = "0";
-
-    }, 3000);
-}
-
-
 function sendMessage() {
     let response = "";
     let found = false;
     let input = document.getElementById("userInput");
     let msg = input.value.trim();
     if (msg === "") return;
-    showBot
 
     let chatBox = document.getElementById("chatBox");
     chatBox.innerHTML += `<div class="user-msg">${msg}</div>`;
