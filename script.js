@@ -44,7 +44,7 @@ function sendMessage() {
     let input = document.getElementById("userInput");
     let msg = input.value.trim();
     if (msg === "") return;
-    showBot();
+    showBot
 
     let chatBox = document.getElementById("chatBox");
     chatBox.innerHTML += `<div class="user-msg">${msg}</div>`;
