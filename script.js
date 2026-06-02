@@ -44,7 +44,7 @@ function sendMessage() {
     let input = document.getElementById("userInput");
     let msg = input.value.trim();
     if (msg === "") return;
-    showBot
+    showBot();
 
     let chatBox = document.getElementById("chatBox");
     chatBox.innerHTML += `<div class="user-msg">${msg}</div>`;
@@ -52,37 +52,82 @@ function sendMessage() {
 
     let text = msg.toLowerCase();
 
-    function checkReminders() {
+    // ================= REMINDER SYSTEM =================
 
-        let reminders =
-            JSON.parse(localStorage.getItem("aktronReminders")) || [];
+    if (text.startsWith("aktron_remind")) {
+
+        // format:
+        // aktron_remind homework | 18:30
+
+        let parts = msg.split("|");
+
+        if (parts.length < 2) {
+
+            chatBox.innerHTML += `
+        <div class="bot-msg">
+        Use format:<br>
+        aktron_remind message | HH:MM
+        </div>
+        `;
+
+            return;
+        }
+
+        let reminderText = parts[0]
+            .replace("aktron_remind", "")
+            .trim();
+
+        let reminderTime = parts[1].trim();
 
         let now = new Date();
 
-        let currentTime =
-            String(now.getHours()).padStart(2, "0") +
-            ":" +
-            String(now.getMinutes()).padStart(2, "0");
+        let [hours, minutes] = reminderTime.split(":");
 
-        reminders.forEach((reminder, index) => {
+        let reminderDate = new Date();
 
-            if (reminder.time === currentTime) {
+        reminderDate.setHours(hours);
+        reminderDate.setMinutes(minutes);
+        reminderDate.setSeconds(0);
 
-                new Notification("⏰ AKTRON Reminder", {
-                    body: reminder.text,
-                    icon: "AI bot.png"
-                });
+        let timeDiff = reminderDate - now;
 
-                reminders.splice(index, 1);
+        if (timeDiff <= 0) {
 
-                localStorage.setItem(
-                    "aktronReminders",
-                    JSON.stringify(reminders)
-                );
+            chatBox.innerHTML += `
+        <div class="bot-msg">
+        Please enter future time 😅
+        </div>
+        `;
+
+            return;
+        }
+
+        // save message
+        chatBox.innerHTML += `
+    <div class="bot-msg">
+    ⏰ Reminder saved for ${reminderTime}
+    </div>
+    `;
+
+        // notification permission
+        Notification.requestPermission().then(permission => {
+
+            if (permission === "granted") {
+
+                setTimeout(() => {
+
+                    new Notification("⏰ AKTRON Reminder", {
+                        body: reminderText,
+                        icon: "AI bot.png"
+                    });
+
+                }, timeDiff);
+
             }
 
         });
 
+        return;
     }
 
     // 👤 STRONG NAME DETECTION SYSTEM
