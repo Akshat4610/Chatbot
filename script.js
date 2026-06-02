@@ -21,8 +21,6 @@ function getCookie(name) {
     return null;
 }
 
-const floatingBot = document.querySelector(".floating-bot");
-
 function sendMessage() {
     let response = "";
     let found = false;
@@ -92,24 +90,6 @@ function sendMessage() {
     ⏰ Reminder saved for ${reminderTime}
     </div>
     `;
-
-        // notification permission
-        Notification.requestPermission().then(permission => {
-
-            if (permission === "granted") {
-
-                setTimeout(() => {
-
-                    new Notification("⏰ AKTRON Reminder", {
-                        body: reminderText,
-                        icon: "AI bot.png"
-                    });
-
-                }, timeDiff);
-
-            }
-
-        });
 
         return;
     }
