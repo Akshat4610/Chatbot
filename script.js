@@ -34,20 +34,20 @@ function sendMessage() {
 
     let text = msg.toLowerCase();
 
-    // ================= REMINDER SYSTEM =================
+    // ================= REMINDER SAVE =================
 
     if (text.startsWith("aktron_remind")) {
 
-        // format:
-        // aktron_remind homework | 18:30
+        let data =
+            msg.replace("aktron_remind", "").trim();
 
-        let parts = msg.split("|");
+        let parts = data.split("|");
 
         if (parts.length < 2) {
 
             chatBox.innerHTML += `
         <div class="bot-msg">
-        Use format:<br>
+        Use:<br>
         aktron_remind message | HH:MM
         </div>
         `;
@@ -55,39 +55,26 @@ function sendMessage() {
             return;
         }
 
-        let reminderText = parts[0]
-            .replace("aktron_remind", "")
-            .trim();
-
+        let reminderText = parts[0].trim();
         let reminderTime = parts[1].trim();
 
-        let now = new Date();
+        let reminders =
+            JSON.parse(localStorage.getItem("aktronReminders")) || [];
 
-        let [hours, minutes] = reminderTime.split(":");
+        reminders.push({
+            text: reminderText,
+            time: reminderTime,
+            triggered: false
+        });
 
-        let reminderDate = new Date();
+        localStorage.setItem(
+            "aktronReminders",
+            JSON.stringify(reminders)
+        );
 
-        reminderDate.setHours(hours);
-        reminderDate.setMinutes(minutes);
-        reminderDate.setSeconds(0);
-
-        let timeDiff = reminderDate - now;
-
-        if (timeDiff <= 0) {
-
-            chatBox.innerHTML += `
-        <div class="bot-msg">
-        Please enter future time 😅
-        </div>
-        `;
-
-            return;
-        }
-
-        // save message
         chatBox.innerHTML += `
     <div class="bot-msg">
-    ⏰ Reminder saved for ${reminderTime}
+    ⏰ Reminder Saved For ${reminderTime}
     </div>
     `;
 
@@ -411,6 +398,49 @@ window.onload = function () {
 
     };
 
+    // ================= NOTIFICATION PERMISSION =================
+
+    if (Notification.permission !== "granted") {
+        Notification.requestPermission();
+    }
+
+    // ================= REMINDER CHECKER =================
+
+    setInterval(() => {
+
+        let reminders =
+            JSON.parse(localStorage.getItem("aktronReminders")) || [];
+
+        let now = new Date();
+
+        let currentTime =
+            String(now.getHours()).padStart(2, "0") +
+            ":" +
+            String(now.getMinutes()).padStart(2, "0");
+
+        reminders.forEach((reminder, index) => {
+
+            if (
+                reminder.time === currentTime &&
+                reminder.triggered !== true
+            ) {
+
+                new Notification("⏰ AKTRON Reminder", {
+                    body: reminder.text
+                });
+
+                reminder.triggered = true;
+
+                localStorage.setItem(
+                    "aktronReminders",
+                    JSON.stringify(reminders)
+                );
+            }
+
+        });
+
+    }, 1000);
+
     if (savedName) {
         chatBox.innerHTML += `
 <div class="bot-wrapper">
@@ -429,4 +459,4 @@ window.onload = function () {
     }
 };
 
-setInterval(checkReminders, 1000);
+
