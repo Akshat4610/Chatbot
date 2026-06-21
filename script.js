@@ -84,7 +84,7 @@ function sendMessage() {
     // 👤 STRONG NAME DETECTION SYSTEM
     if (text.includes("my name is")) {
 
-        // original message se naam nikalo (case preserve karne ke liye)
+
         let name = msg.split(/my name is/i)[1];
 
         if (name) {
@@ -110,7 +110,7 @@ function sendMessage() {
             }
         }
 
-        return; // ⚠ VERY IMPORTANT
+        return;
     }
     const stopWords = ["in", "which", "is", "the", "a", "an", "of", "to", "for", "what", "who", "when", "where", "how", "on", "at", "and", "or", "is", "are", "you", "your", "my", "me", "we", "us", "it", "that", "this", "these", "those", "with", "as", "from", "be", "was", "were", "have", "has", "had", "do", "does", "did", "not", "but", "if", "so", "because", "about", "all", "any", "some", "no", "yes"];
 
