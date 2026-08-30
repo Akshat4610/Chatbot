@@ -384,7 +384,7 @@ function showFeedback() {
     document.getElementById("feedbackBtn").style.display = "block";
 }
 function openFeedback() {
-    window.open("https://form.svhrt.com/696c8de031fccd4a51e47322", "_blank");
+    window.open("feedback.html", "_blank");
 }
 
 window.onload = function () {
