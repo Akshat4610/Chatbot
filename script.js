@@ -344,7 +344,7 @@ function sendMessage() {
         if (bestMatch) return bestMatch.reply;
 
         else if (text == "akshat" || text == "akshat shah" || text == "akshat's name" || text == "who is akshat" || text.includes("tell me about akshat") || text.includes("about akshat") || text.includes("information about akshat") || text.includes("describe akshat") || text.includes("who is akshat shah") || text.includes("know about akshat") || text.includes("akshat")) {
-            return "Akshat is a computer engineering student and aspiring software developer. He is passionate about coding and technology, and enjoys learning new programming languages and frameworks. In his free time, Akshat likes to travel, explore new places, and listen to music. He is also active on social media, where he shares his thoughts and experiences with his followers.";
+            return "Akshat is a computer engineering student and aspiring software developer. He is passionate about coding and technology, and enjoys learning new programming languages and frameworks.";
         }
         else return "I am sorry, I didn't understand 😅";
 
